@@ -1,0 +1,8 @@
+tile.contenttweaker.wire_coil_crystalline_alloy.name=晶金热导线圈组
+
+item.contenttweaker.thorium_cell.name=钍燃料单元
+item.contenttweaker.thorium_cell_depleted.name=枯竭钍燃料单元
+item.contenttweaker.uranium_cell.name=铀燃料单元
+item.contenttweaker.uranium_cell_depleted.name=枯竭铀燃料单元
+item.contenttweaker.mox_cell.name=钚铀混合氧化物燃料单元
+item.contenttweaker.mox_cell_depleted.name=枯竭钚铀混合氧化物燃料单元
