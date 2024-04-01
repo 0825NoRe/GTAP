@@ -12,6 +12,7 @@ import mods.gregtech.recipe.functions.IRunOverclockingLogicFunction;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.RecipeMaps;
 import mods.gregtech.recipe.RecipeMapBuilder;
+import scripts.#Misc.CraftingScript_Static;
 
 //园艺玻璃缸
 var glass_garden_jar = Builder.start("glass_garden_jar",32001)
@@ -56,17 +57,6 @@ var glass_garden_jar = Builder.start("glass_garden_jar",32001)
     )
     .buildAndRegister();
 
-//合成台变量
-var A = null;
-var B = null;
-var C = null;
-var D = null;
-var E = null;
-var F = null;
-var G = null;
-var H = null;
-var I = null;
-var N = null;
 
 //主方块配方
 A = <gregtech:machine:84>;//
