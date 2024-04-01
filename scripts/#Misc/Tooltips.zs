@@ -40,3 +40,7 @@
 // <gregtech:machine:32128>.addTooltip("§f§r");
 // <gregtech:machine:32129>.addTooltip("§f§r");
 // <gregtech:machine:32130>.addTooltip("§f§r");
+//32130 高压涡旋发电机
+// <gregtech:machine:32136>.addTooltip("§f§r");
+// <gregtech:machine:32137>.addTooltip("§f§r");
+// <gregtech:machine:32138>.addTooltip("§f§r");
