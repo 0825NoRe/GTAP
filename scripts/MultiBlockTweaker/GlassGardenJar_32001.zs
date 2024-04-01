@@ -12,7 +12,7 @@ import mods.gregtech.recipe.functions.IRunOverclockingLogicFunction;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.RecipeMaps;
 import mods.gregtech.recipe.RecipeMapBuilder;
-import scripts.#Misc.CraftingScript_Static;
+import scripts.!Misc.CraftingScript_Static;
 
 //园艺玻璃缸
 var glass_garden_jar = Builder.start("glass_garden_jar",32001)
