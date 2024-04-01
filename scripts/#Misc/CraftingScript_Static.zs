@@ -1,1 +1,10 @@
-
+var A = null;
+var B = null;
+var C = null;
+var D = null;
+var E = null;
+var F = null;
+var G = null;
+var H = null;
+var I = null;
+val N = null;
