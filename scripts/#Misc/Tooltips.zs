@@ -44,3 +44,12 @@
 // <gregtech:machine:32136>.addTooltip("§f§r");
 // <gregtech:machine:32137>.addTooltip("§f§r");
 // <gregtech:machine:32138>.addTooltip("§f§r");
+//32140 灵魂绑定器
+// <gregtech:machine:32143>.addTooltip("§f§r");
+// <gregtech:machine:32144>.addTooltip("§f§r");
+// <gregtech:machine:32145>.addTooltip("§f§r");
+// <gregtech:machine:32146>.addTooltip("§f§r");
+// <gregtech:machine:32147>.addTooltip("§f§r");
+// <gregtech:machine:32148>.addTooltip("§f§r");
+// <gregtech:machine:32149>.addTooltip("§f§r");
+// <gregtech:machine:32150>.addTooltip("§f§r");
