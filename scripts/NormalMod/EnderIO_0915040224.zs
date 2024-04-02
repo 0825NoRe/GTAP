@@ -7,7 +7,7 @@ recipes.removeByMod("enderio");
 
 //破损刷怪箱：类型改变
 //此为替代配方。受限于"无法记录输入物NBT并应用于输出物"，灵魂绑定器的完全GT化暂无法实现。
-//我搞了十三个小时的无用功！... #抓狂 #阴暗的爬行 #化身天灾
+//我搞了十三个小时的无用功！... #抓狂 #阴暗地爬行 #化身天灾
 recipes.addShapeless(
 "BrokenSpawnerChangeRecipe",
 <enderio:item_broken_spawner>,
