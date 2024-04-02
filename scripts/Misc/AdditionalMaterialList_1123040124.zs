@@ -58,7 +58,7 @@ MaterialBuilder(32004, "energetic_alloy")
     .color(0xEEBB44)
     .iconSet("metallic")
     .build();
-<material:energetic_alloy>.setFormula("?", true);
+<material:energetic_alloy>.setFormula("AuSi(FeS₂)₅(CrAl₂O₃)Hg₃(?)", true);
 
 //32005 - 脉冲合金 - Vibrant Alloy
 MaterialBuilder(32005, "vibrant_alloy")
@@ -68,7 +68,7 @@ MaterialBuilder(32005, "vibrant_alloy")
     .color(0x99EE66)
     .iconSet("metallic")
     .build();
-<material:vibrant_alloy>.setFormula("?", true);
+<material:vibrant_alloy>.setFormula("(AuSi(FeS₂)₅(CrAl₂O₃)Hg₃(?))(?)", true);
 
 //32006 - 超临界蒸汽 - SupercriticalSteam
 MaterialBuilder(32006,"supercritical_steam")
@@ -146,7 +146,7 @@ MaterialBuilder(32014, "conductive_iron")
     .color(0xFFCCCC)
     .iconSet("metallic")
     .build();
-<material:conductive_iron>.setFormula("?", true);
+<material:conductive_iron>.setFormula("(Fe)(Si(FeS₂)₅(CrAl₂O₃)Hg₃(?))", true);
 
 //32015 - 红石合金 - Redstone Alloy
 MaterialBuilder(32015, "redstone_alloy")
@@ -156,7 +156,7 @@ MaterialBuilder(32015, "redstone_alloy")
     .color(0xCC3333)
     .iconSet("metallic")
     .build();
-<material:redstone_alloy>.setFormula("?", true);
+<material:redstone_alloy>.setFormula("(Si(FeS₂)₅(CrAl₂O₃)Hg₃(?))(C)(Si)", true);
 
 //32016 - 磁钢 - Electrical Steel
 MaterialBuilder(32016, "electrical_steel")
@@ -166,7 +166,7 @@ MaterialBuilder(32016, "electrical_steel")
     .color(0xAAAAAA)
     .iconSet("metallic")
     .build();
-<material:electrical_steel>.setFormula("?", true);
+<material:electrical_steel>.setFormula("(Fe)(C)(Si)", true);
 
 //32017 - 末影钢 - End Steel
 MaterialBuilder(32017, "end_steel")
