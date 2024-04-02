@@ -53,19 +53,31 @@ A = <aeadditions:storage.component:1>;//组件
 recipes.addShapeless(<aeadditions:storage.component:0>,
     [A]
 );
-
+A = <appliedenergistics2:material:39>;//外壳
+B = <aeadditions:storage.component:0>;//组件
+recipes.addShapeless(<aeadditions:storage.physical:0>,
+    [A,B]
+);
 //1024K
 A = <aeadditions:storage.component:2>;//组件
 recipes.addShapeless(<aeadditions:storage.component:1>,
     [A]
 );
-
+A = <appliedenergistics2:material:39>;//外壳
+B = <aeadditions:storage.component:1>;//组件
+recipes.addShapeless(<aeadditions:storage.physical:1>,
+    [A,B]
+);
 //4096K
 A = <aeadditions:storage.component:3>;//组件
 recipes.addShapeless(<aeadditions:storage.component:2>,
     [A]
 );
-
+A = <appliedenergistics2:material:39>;//外壳
+B = <aeadditions:storage.component:2>;//组件
+recipes.addShapeless(<aeadditions:storage.physical:2>,
+    [A,B]
+);
 //16384K
 //A = <appliedenergistics2:material:35>;//1K-ME组件
 //B = <ore:>;//石英玻璃
