@@ -31,14 +31,14 @@ RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
     .inputs([<ore:dustNetherStar>,//下界之星粉
              <ore:dustMelodicAlloy>])//旋律合金粉
     .outputs([<gregtech:meta_dust:32002>*2])
-    .EUt(30000)
+    .EUt(7680)
     .duration(100)
     .buildAndRegister();
     RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:netherStar>,//下界之星
              <ore:ingotMelodicAlloy>])//旋律合金锭
     .outputs([<gregtech:meta_ingot:32002>*2])
-    .EUt(30000)
+    .EUt(7680)
     .duration(200)
     .buildAndRegister();
 //充能铁
