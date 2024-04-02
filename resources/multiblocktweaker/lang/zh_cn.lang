@@ -1,11 +1,8 @@
-multiblocktweaker.machine.industrial_alloy_furnace.name=工业冶炼炉
 multiblocktweaker.machine.glass_garden_jar.name=园艺玻璃缸
 multiblocktweaker.machine.fission_reactor.name=裂变反应堆
 
-multiblocktweaker.multiblock.industrial_alloy_furnace.name=工业冶炼炉
 multiblocktweaker.multiblock.glass_garden_jar.name=园艺玻璃缸
 multiblocktweaker.multiblock.fission_reactor.name=裂变反应堆
 
-recipemap.industrial_alloy_furnace.name=粉末冶金
 recipemap.glass_garden_jar.name=植物催生
 recipemap.fission_reactor.name=裂变反应
