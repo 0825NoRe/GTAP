@@ -6,23 +6,76 @@ recipes.removeByMod("aeadditions");
 recipes.removeByMod("ae2stuff");
 recipes.removeByMod("ae2fc");
 
+//ME存储外壳
+
+
 //[组件&元件 (1 to 16384 to 4096...)]
 //[物品]
 //1K
 
+A = <appliedenergistics2:material:39>;//外壳
+B = <appliedenergistics2:material:35>;//组件
+recipes.addShapeless(<appliedenergistics2:storage_cell_1k>,
+    [A,B]
+);
 //4K
-
+A = <appliedenergistics2:material:37>;//组件
+recipes.addShapeless(<appliedenergistics2:material:36>,
+    [A]
+);
+A = <appliedenergistics2:material:39>;//外壳
+B = <appliedenergistics2:material:36>;//组件
+recipes.addShapeless(<appliedenergistics2:storage_cell_4k>,
+    [A,B]
+);
 //16K
-
+A = <appliedenergistics2:material:38>;//组件
+recipes.addShapeless(<appliedenergistics2:material:37>,
+    [A]
+);
+A = <appliedenergistics2:material:39>;//外壳
+B = <appliedenergistics2:material:37>;//组件
+recipes.addShapeless(<appliedenergistics2:storage_cell_16k>,
+    [A,B]
+);
 //64K
-
+A = <aeadditions:storage.component:0>;//组件
+recipes.addShapeless(<appliedenergistics2:material:38>,
+    [A]
+);
+A = <appliedenergistics2:material:39>;//外壳
+B = <appliedenergistics2:material:39>;//组件
+recipes.addShapeless(<appliedenergistics2:storage_cell_64k>,
+    [A,B]
+);
 //256K
+A = <aeadditions:storage.component:1>;//组件
+recipes.addShapeless(<aeadditions:storage.component:0>,
+    [A]
+);
 
 //1024K
+A = <aeadditions:storage.component:2>;//组件
+recipes.addShapeless(<aeadditions:storage.component:1>,
+    [A]
+);
 
 //4096K
+A = <aeadditions:storage.component:3>;//组件
+recipes.addShapeless(<aeadditions:storage.component:2>,
+    [A]
+);
 
 //16384K
+//A = <appliedenergistics2:material:35>;//1K-ME组件
+//B = <ore:>;//石英玻璃
+//C = <>;//
+//D = <>;//
+//recipes.addShaped(<aeadditions:storage.component:3>,
+//    [[D,C,D],
+//     [A,B,A],
+//     [D,A,D]]
+//);
 
 //[流体]
 //1K
