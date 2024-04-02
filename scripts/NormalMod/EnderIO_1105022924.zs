@@ -210,6 +210,13 @@ RecipeMap.getByName("macerator").recipeBuilder()//研磨机
     .EUt(16)
     .duration(200)
     .buildAndRegister();
+//RecipeMap.getByName("").recipeBuilder()//高压釜
+//    .inputs([<>])//充能水晶粉
+//    .fluidInputs([<fluid:water>*1000])
+//    .outputs([<ore:itemPulsatingCrystal>])
+//    .EUt(30)
+//    .duration(600)
+//    .buildAndRegister();
 //Z-逻辑控制器
 RecipeMap.getByName("slice_and_splice").recipeBuilder()//头颅装配机
     .inputs([<ore:plateSoulariumAlloy>*2,//魂金板
