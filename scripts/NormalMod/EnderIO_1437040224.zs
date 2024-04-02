@@ -525,4 +525,12 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //红石
 
 
-//
+//方尖碑
+//经验
+
+//天气
+
+//诱引
+
+//排除
+
