@@ -18,7 +18,7 @@ MaterialBuilder(32000, "crystalline_alloy")
     .color(0x88FFFF)
     .iconSet("shiny")
     .build();
-<material:crystalline_alloy>.setFormula("?", true);
+<material:crystalline_alloy>.setFormula("(((Fe)(?))₈(C)₉)(Au)", true);
 
 //32001 - 旋金 - Melodic Alloy
 MaterialBuilder(32001, "melodic_alloy")
@@ -48,7 +48,7 @@ MaterialBuilder(32003, "pulsating_iron")
     .color(0x66DD66)
     .iconSet("metallic")
     .build();
-<material:pulsating_iron>.setFormula("?", true);
+<material:pulsating_iron>.setFormula("(Fe)(?)", true);
 
 //32004 - 充能合金 - Energetic Alloy
 MaterialBuilder(32004, "energetic_alloy")
