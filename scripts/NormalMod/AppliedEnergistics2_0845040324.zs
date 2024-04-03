@@ -11,6 +11,10 @@ recipes.removeByMod("ae2fc");
 //[组件&元件 (1 to 16384 to 4096...)]
 //[物品]
 //1K
+//+正常配方
+recipes.addShapeless(<appliedenergistics2:material:35>,
+    [<appliedenergistics2:material:36>]//4K组件
+);
 recipes.addShapeless(<appliedenergistics2:storage_cell_1k>,
     [<appliedenergistics2:material:39>,<appliedenergistics2:material:35>]//外壳,1K组件
 );
