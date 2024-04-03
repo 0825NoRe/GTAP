@@ -1,7 +1,6 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.data.IData;
 import crafttweaker.event.PlayerCraftedEvent;
-import scripts.Misc.CraftingScript_Static;
 
 recipes.removeByMod("enderio");
 
@@ -107,13 +106,10 @@ RecipeMap.getByName("soul_binder").recipeBuilder()//灵魂绑定器
 
 //电容
 //基础1.0
-A = <ore:nuggetGold>;//金粒
-B = <enderio:item_material:20>;//基岩粉
-C = <ore:dustRedstone>;//红石粉
 recipes.addShaped(<enderio:item_basic_capacitor:0>,
-    [[N,A,B],
-     [A,C,A],
-     [B,A,N]]
+    [[null,<ore:nuggetGold>,<enderio:item_material:20>],   //空    ,金粒 ,基岩粉
+     <ore:nuggetGold>,<ore:dustRedstone>,<ore:nuggetGold>],//金粒  ,红石粉,金粒
+     [<enderio:item_material:20>,<ore:nuggetGold>,null]]   //基岩粉,金粒  ,空
 );
 RecipeMap.getByName("assembler").recipeBuilder()
     .inputs([<ore:nuggetGold>*4,
@@ -124,13 +120,10 @@ RecipeMap.getByName("assembler").recipeBuilder()
     .duration(100)
     .buildAndRegister();
 //双层2.0
-A = <ore:plateEnergeticAlloy>;//充能合金板
-B = <ore:dustCoal>;//煤粉
-C = <enderio:item_basic_capacitor:0>;//基础电容
 recipes.addShaped(<enderio:item_basic_capacitor:1>,
-    [[N,A,N],
-     [C,B,C],
-     [N,A,N]]
+    [[null,<ore:plateEnergeticAlloy>,null],                                            //空     ,充金板,空
+     <enderio:item_basic_capacitor:0>,<ore:dustCoal>,<enderio:item_basic_capacitor:0>],//基础电容,煤粉  ,基础电容
+     [null,<ore:plateEnergeticAlloy>,null]]                                            //空     ,充金板,空
 );
 RecipeMap.getByName("assembler").recipeBuilder()
     .inputs([<ore:plateEnergeticAlloy>*2,
@@ -141,13 +134,10 @@ RecipeMap.getByName("assembler").recipeBuilder()
     .duration(100)
     .buildAndRegister();
 //八位3.0
-A = <ore:plateVibrantAlloy>;//脉冲合金板
-B = <ore:blockGlowstone>;//荧石
-C = <enderio:item_basic_capacitor:1>;//双层电容
 recipes.addShaped(<enderio:item_basic_capacitor:2>,
-    [[N,A,N],
-     [C,B,C],
-     [N,A,N]]
+    [[null,<ore:plateVibrantAlloy>,null],                                                    //空     ,脉金板,空
+     <enderio:item_basic_capacitor:1>,<ore:blockGlowstone>,<enderio:item_basic_capacitor:1>],//双层电容,荧石  ,双层电容
+     [null,<ore:plateVibrantAlloy>,null]]                                                    //空     ,脉金板,空
 );
 RecipeMap.getByName("assembler").recipeBuilder()
     .inputs([<ore:plateVibrantAlloy>*2,
@@ -345,12 +335,12 @@ recipes.addShaped(<enderio:item_redstone_timer_filter>,
 //纯净玻璃
 //普通
 furnace.addRecipe(<enderio:block_fused_glass>, 
-                                <minecraft:glass>,//玻璃
-                                0.1);
+                  <minecraft:glass>,//玻璃
+                  0.1);
 //黑暗
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dyeBlack>,//黑色染料
-                  <enderio:block_fused_glass>])//纯净玻璃
+             <enderio:block_fused_glass>])//纯净玻璃
     .outputs([<enderio:block_dark_fused_glass>])
     .EUt(16)
     .duration(200)
@@ -358,7 +348,7 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
 //荧光
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dustGlowstone>,//荧石粉
-                  <enderio:block_fused_glass>])//纯净玻璃
+             <enderio:block_fused_glass>])//纯净玻璃
     .outputs([<enderio:block_enlightened_fused_glass>])
     .EUt(16)
     .duration(200)
@@ -389,7 +379,7 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()
 //黑暗
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dyeBlack>,//黑色染料
-                  <enderio:block_fused_quartz>])//石英玻璃
+             <enderio:block_fused_quartz>])//石英玻璃
     .outputs([<enderio:block_dark_fused_quartz>])
     .EUt(16)
     .duration(200)
@@ -397,7 +387,7 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
 //荧光
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dustGlowstone>,//荧石粉
-                  <enderio:block_fused_quartz>])//石英玻璃
+             <enderio:block_fused_quartz>])//石英玻璃
     .outputs([<enderio:block_enlightened_fused_quartz>])
     .EUt(16)
     .duration(200)
