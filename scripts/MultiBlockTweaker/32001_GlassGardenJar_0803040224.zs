@@ -12,10 +12,9 @@ import mods.gregtech.recipe.functions.IRunOverclockingLogicFunction;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.RecipeMaps;
 import mods.gregtech.recipe.RecipeMapBuilder;
-import scripts.Misc.CraftingScript_Static;
 
 //园艺玻璃缸
-var glass_garden_jar = Builder.start("glass_garden_jar",32001)
+val glass_garden_jar = Builder.start("glass_garden_jar",32001)
     .withPattern(function(controller as IControllerTile) as IBlockPattern {
         return FactoryBlockPattern.start()
             .aisle(
@@ -59,11 +58,10 @@ var glass_garden_jar = Builder.start("glass_garden_jar",32001)
 
 
 //主方块配方
-A = <gregtech:machine:84>;//
 recipes.addShaped(<gregtech:machine:32001>,
-    [[N,N,N],
-     [N,A,N],
-     [N,N,N]]
+    [[null,null,null],                    //空 空 空
+     [null,<gregtech:machine:84>,null],   //空 ? 空
+     [null,null,null]]                    //空 空 空
 );
 
 //机器配方
