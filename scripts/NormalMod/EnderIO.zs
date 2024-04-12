@@ -347,7 +347,7 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()
 //黑暗
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dyeBlack>,//黑色染料
-             <enderio:block_fused_quartz>])//石英玻璃
+             <ore:fusedQuartz>])//石英玻璃
     .outputs([<enderio:block_dark_fused_quartz>])
     .EUt(16)
     .duration(200)
@@ -355,7 +355,7 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
 //荧光
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dustGlowstone>,//荧石粉
-             <enderio:block_fused_quartz>])//石英玻璃
+             <ore:fusedQuartz>])//石英玻璃
     .outputs([<enderio:block_enlightened_fused_quartz>])
     .EUt(16)
     .duration(200)
@@ -494,13 +494,29 @@ recipes.addShaped(<enderio:item_soul_vial>,
 
 //导管框架
 //普通
-
-//透明
-
+recipes.addShaped(<enderio:item_conduit_facade:0>*64,
+    [[<ore:stickIron>,<ore:plateIron>,<ore:stickIron>],//铁杆,铁板,铁杆
+     [<ore:plateIron>,<ore:frameIron>,<ore:plateIron>],//铁板,铁框架,铁板
+     [<ore:stickIron>,<ore:plateIron>,<ore:stickIron>]]//铁杆,铁板,铁杆
+);
 //硬化
-
+recipes.addShaped(<enderio:item_conduit_facade:1>*64,
+    [[<ore:stickSteel>,<ore:plateSteel>,<ore:stickSteel>],//钢杆,钢板,钢杆
+     [<ore:plateSteel>,<ore:frameSteel>,<ore:plateSteel>],//钢板,钢框架,钢板
+     [<ore:stickSteel>,<ore:plateSteel>,<ore:stickSteel>]]//钢杆,钢板,钢杆
+);
+//透明
+recipes.addShaped(<enderio:item_conduit_facade:2>*64,
+    [[<ore:stickIron>,<minecraft:glass>,<ore:stickIron>],//铁杆,玻璃,铁杆
+     [<minecraft:glass>,<ore:frameIron>,<minecraft:glass>],//玻璃,铁框架,玻璃
+     [<ore:stickIron>,<minecraft:glass>,<ore:stickIron>]]//铁杆,玻璃,铁杆
+);
 //透明硬化
-
+recipes.addShaped(<enderio:item_conduit_facade:3>*64,
+    [[<ore:stickSteel>,<ore:fusedQuartz>,<ore:stickSteel>],//钢杆,石英玻璃,钢杆
+     [<ore:fusedQuartz>,<ore:frameSteel>,<ore:fusedQuartz>],//石英玻璃,钢框架,石英玻璃
+     [<ore:stickSteel>,<ore:fusedQuartz>,<ore:stickSteel>]]//钢杆,石英玻璃,钢杆
+);
 
 //导管
 //物品
