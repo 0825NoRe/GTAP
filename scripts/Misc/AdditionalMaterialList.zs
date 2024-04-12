@@ -1,3 +1,4 @@
+//2248/0412/24
 #loader gregtech
 #priority 3
 
@@ -18,7 +19,7 @@ MaterialBuilder(32000, "crystalline_alloy")
     .color(0x88FFFF)
     .iconSet("shiny")
     .build();
-<material:crystalline_alloy>.setFormula("(((Fe)(?))₈(C)₉)(Au)", true);
+<material:crystalline_alloy>.setFormula("(((Fe)(BeK₄N₅))₈(C)₉)(Au)", true);
 
 //32001 - 旋金 - Melodic Alloy
 MaterialBuilder(32001, "melodic_alloy")
@@ -28,7 +29,7 @@ MaterialBuilder(32001, "melodic_alloy")
     .color(0xDD99FF)
     .iconSet("shiny")
     .build();
-<material:melodic_alloy>.setFormula("?", true);
+<material:melodic_alloy>.setFormula("(((Fe)(C)(MgFeSi₂O₄))(?))(Si(FeS₂)₅(CrAl₂O₃)Hg₃)((Al₆Si₆Ca₈Na₈)₁₂(Al₃Si₃Na₄Cl)₂(FeS₂)(CaCO₃))", true);
 
 //32002 - 恒金 - Stellar Alloy
 MaterialBuilder(32002, "stellar_alloy")
@@ -38,7 +39,7 @@ MaterialBuilder(32002, "stellar_alloy")
     .color(0xFFFFCC)
     .iconSet("shiny")
     .build();
-<material:stellar_alloy>.setFormula("?", true);
+<material:stellar_alloy>.setFormula("((((Fe)(C)(MgFeSi₂O₄))(?))(Si(FeS₂)₅(CrAl₂O₃)Hg₃)((Al₆Si₆Ca₈Na₈)₁₂(Al₃Si₃Na₄Cl)₂(FeS₂)(CaCO₃)))(?)", true);
 
 //32003 - 充能铁 - Pulsating Iron
 MaterialBuilder(32003, "pulsating_iron")
@@ -48,7 +49,7 @@ MaterialBuilder(32003, "pulsating_iron")
     .color(0x66DD66)
     .iconSet("metallic")
     .build();
-<material:pulsating_iron>.setFormula("(Fe)(?)", true);
+<material:pulsating_iron>.setFormula("(Fe)(BeK₄N₅)", true);
 
 //32004 - 充能合金 - Energetic Alloy
 MaterialBuilder(32004, "energetic_alloy")
@@ -58,7 +59,7 @@ MaterialBuilder(32004, "energetic_alloy")
     .color(0xEEBB44)
     .iconSet("metallic")
     .build();
-<material:energetic_alloy>.setFormula("AuSi(FeS₂)₅(CrAl₂O₃)Hg₃(?)", true);
+<material:energetic_alloy>.setFormula("(AuSi(FeS₂)₅(CrAl₂O₃)Hg₃)(AuSi(FeS₂)₅(CrAl₂O₃)Hg₃(?))", true);
 
 //32005 - 脉冲合金 - Vibrant Alloy
 MaterialBuilder(32005, "vibrant_alloy")
@@ -68,7 +69,7 @@ MaterialBuilder(32005, "vibrant_alloy")
     .color(0x99EE66)
     .iconSet("metallic")
     .build();
-<material:vibrant_alloy>.setFormula("(AuSi(FeS₂)₅(CrAl₂O₃)Hg₃(?))(?)", true);
+<material:vibrant_alloy>.setFormula("((AuSi(FeS₂)₅(CrAl₂O₃)Hg₃)(AuSi(FeS₂)₅(CrAl₂O₃)Hg₃(?)))(BeK₄N₅)", true);
 
 //32006 - 超临界蒸汽 - SupercriticalSteam
 MaterialBuilder(32006,"supercritical_steam")
@@ -136,7 +137,7 @@ MaterialBuilder(32013, "dark_steel")
     .color(0x333333)
     .iconSet("metallic")
     .build();
-<material:dark_steel>.setFormula("?", true);
+<material:dark_steel>.setFormula("(Fe)(C)(MgFeSi₂O₄)", true);
 
 //32014 - 导电铁 - Conductive iron
 MaterialBuilder(32014, "conductive_iron")
@@ -176,4 +177,4 @@ MaterialBuilder(32017, "end_steel")
     .color(0xCCCC88)
     .iconSet("metallic")
     .build();
-<material:end_steel>.setFormula("?", true);
+<material:end_steel>.setFormula("((Fe)(C)(MgFeSi₂O₄))(?)", true);
