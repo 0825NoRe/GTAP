@@ -1,4 +1,4 @@
-//0921/0415/24
+//1133/0415/24
 import mods.gregtech.recipe.RecipeMaps;
 
 recipes.removeByMod("appliedenergistics2");
@@ -88,8 +88,6 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 //4096K
 
-
-//设备
 //石英纤维
 
 //[线缆]
@@ -197,7 +195,6 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 //反相
 
-
 //[材料]
 //ME存储外壳
 recipes.addShaped(<appliedenergistics2:material:39>,
@@ -205,6 +202,8 @@ recipes.addShaped(<appliedenergistics2:material:39>,
      [<ore:dustRedstone>,null,<ore:dustRedstone>],//红石粉,空,红石粉
      [<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>]]//铁锭,铁锭,铁锭
 );
+//陨石雷达
+
 //空白样板
 
 //身份卡
