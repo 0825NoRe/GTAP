@@ -70,14 +70,10 @@ recipes.addShapeless(<aeadditions:storage.physical:2>,
     [<appliedenergistics2:material:39>,<aeadditions:storage.component:2>]//外壳,4096K组件
 );
 //16384K
-//A = <appliedenergistics2:material:35>;//1K组件
-//B = <ore:>;//石英玻璃
-//C = <>;//
-//D = <>;//
 //recipes.addShaped(<aeadditions:storage.component:3>,
-//    [[<>,<>,<>],
-//     [<appliedenergistics2:material:35>,<>,<appliedenergistics2:material:35>],
-//     [<>,<appliedenergistics2:material:35>,<>]]
+//    [[<ore:circuitLv>,<appliedenergistics2:material:23>,<ore:circuitLv>],//LV电路板,运算处理器,LV电路板
+//     [<appliedenergistics2:material:24>,<appliedenergistics2:material:35>,<appliedenergistics2:material:24>],//工程处理器 ,1K组件,工程处理器 
+//     [<ore:circuitLv>,<appliedenergistics2:material:23>,<ore:circuitLv>]]//LV电路板,运算处理器,LV电路板
 //);
 recipes.addShapeless(<aeadditions:storage.physical:3>,
     [<appliedenergistics2:material:39>,<aeadditions:storage.component:3>]//外壳,16384K组件
