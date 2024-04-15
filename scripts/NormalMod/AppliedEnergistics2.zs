@@ -90,6 +90,8 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 
 //设备
+//石英纤维
+
 //[线缆]
 //ME玻璃线缆
 
