@@ -6,12 +6,6 @@ recipes.removeByMod("aeadditions");
 recipes.removeByMod("ae2stuff");
 recipes.removeByMod("ae2fc");
 
-//ME存储外壳
-recipes.addShaped(<appliedenergistics2:material:39>,
-    [[<ore:fusedQuartz>,<ore:dustRedstone>,<ore:fusedQuartz>],//石英玻璃,红石粉,石英玻璃
-     [<ore:dustRedstone>,null,<ore:dustRedstone>],//红石粉,空,红石粉
-     [<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>]]//铁锭,铁锭,铁锭
-);
 
 //[组件&元件]
 //[物品]
@@ -96,6 +90,17 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 
 //设备
+//[线缆]
+//ME玻璃线缆
+
+//ME包层线缆
+
+//ME智能线缆
+
+//ME致密线缆
+
+//ME致密包层线缆
+
 //物质聚合器
 
 //能源接收器
@@ -147,7 +152,8 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 //合成单元
 
-//终端
+//[终端]
+//普通
 
 //流体
 
@@ -191,6 +197,16 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 
 //[材料]
+//ME存储外壳
+recipes.addShaped(<appliedenergistics2:material:39>,
+    [[<ore:fusedQuartz>,<ore:dustRedstone>,<ore:fusedQuartz>],//石英玻璃,红石粉,石英玻璃
+     [<ore:dustRedstone>,null,<ore:dustRedstone>],//红石粉,空,红石粉
+     [<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>]]//铁锭,铁锭,铁锭
+);
+//空白样板
+
+//身份卡
+
 //[压印模板]
 //硅
 
@@ -215,3 +231,22 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 //逻辑
 
 //计算
+
+
+//升级
+//无线信号增幅器
+
+//加速卡
+
+//容量卡
+
+//红石卡
+
+//反相卡
+
+//模糊卡
+
+//合成卡
+
+//显示元件
+
