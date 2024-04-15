@@ -33,24 +33,24 @@
 <gregtech:machine:32119>.addTooltip("§f 微小变化器 §r");
 <gregtech:machine:32120>.addTooltip("§f 跨材料雾化器 §r");
 //32120 充能器
-// <gregtech:machine:32123>.addTooltip("§f 上古遗迹出土的万能充 §r");
-// <gregtech:machine:32124>.addTooltip("§f 上古遗迹出土的万能充 §r");
-// <gregtech:machine:32125>.addTooltip("§f 上古遗迹出土的万能充 §r");
-// <gregtech:machine:32126>.addTooltip("§f 上古遗迹出土的万能充 §r");
-// <gregtech:machine:32127>.addTooltip("§f 电子跃迁 §r");
-// <gregtech:machine:32128>.addTooltip("§f 电子跃迁 §r");
-// <gregtech:machine:32129>.addTooltip("§f 电子跃迁 §r");
-// <gregtech:machine:32130>.addTooltip("§f 你指尖跃动的电光... §r");
+<gregtech:machine:32123>.addTooltip("§f 上古遗迹出土的万能充 §r");
+<gregtech:machine:32124>.addTooltip("§f 上古遗迹出土的万能充 §r");
+<gregtech:machine:32125>.addTooltip("§f 上古遗迹出土的万能充 §r");
+<gregtech:machine:32126>.addTooltip("§f 上古遗迹出土的万能充 §r");
+<gregtech:machine:32127>.addTooltip("§f 电子跃迁 §r");
+<gregtech:machine:32128>.addTooltip("§f 电子跃迁 §r");
+<gregtech:machine:32129>.addTooltip("§f 电子跃迁 §r");
+<gregtech:machine:32130>.addTooltip("§f 你指尖跃动的电光... §r");
 //32130 高压涡旋发电机
-// <gregtech:machine:32136>.addTooltip("§f 具有将肉馅搅碎程度的能力 §r");
-// <gregtech:machine:32137>.addTooltip("§f 再强劲的推流也HOLD住 §r");
-// <gregtech:machine:32138>.addTooltip("§f 九十九万匹磁场转动... §r");
+<gregtech:machine:32136>.addTooltip("§f 具有将肉馅搅碎程度的能力 §r");
+<gregtech:machine:32137>.addTooltip("§f 再强劲的推流也HOLD住 §r");
+<gregtech:machine:32138>.addTooltip("§f 九十九万匹磁场转动... §r");
 //32140 灵魂绑定器
-// <gregtech:machine:32143>.addTooltip("§f§r");
-// <gregtech:machine:32144>.addTooltip("§f§r");
-// <gregtech:machine:32145>.addTooltip("§f§r");
-// <gregtech:machine:32146>.addTooltip("§f§r");
-// <gregtech:machine:32147>.addTooltip("§f§r");
-// <gregtech:machine:32148>.addTooltip("§f§r");
-// <gregtech:machine:32149>.addTooltip("§f§r");
-// <gregtech:machine:32150>.addTooltip("§f§r");
+<gregtech:machine:32143>.addTooltip("§f 灵魂层面的精确手术 §r");
+<gregtech:machine:32144>.addTooltip("§f 灵魂层面的精确手术 §r");
+<gregtech:machine:32145>.addTooltip("§f 灵魂层面的精确手术 §r");
+<gregtech:machine:32146>.addTooltip("§f 灵魂层面的精确手术 §r");
+<gregtech:machine:32147>.addTooltip("§f 意识注入设备的接口 §r");
+<gregtech:machine:32148>.addTooltip("§f 意识注入设备的接口 §r");
+<gregtech:machine:32149>.addTooltip("§f 意识注入设备的接口 §r");
+<gregtech:machine:32150>.addTooltip("§f 这就是为什么末影科技强大先进的原因之所在 §r");
