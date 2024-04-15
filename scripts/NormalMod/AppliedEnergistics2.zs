@@ -1,3 +1,4 @@
+//0921/0415/24
 import mods.gregtech.recipe.RecipeMaps;
 
 recipes.removeByMod("appliedenergistics2");
@@ -6,12 +7,20 @@ recipes.removeByMod("ae2stuff");
 recipes.removeByMod("ae2fc");
 
 //ME存储外壳
+recipes.addShaped(<appliedenergistics2:material:39>,
+    [[<ore:fusedQuartz>,<ore:dustRedstone>,<ore:fusedQuartz>],//石英玻璃,红石粉,石英玻璃
+     [<ore:dustRedstone>,null,<ore:dustRedstone>],//红石粉,空,红石粉
+     [<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>]]//铁锭,铁锭,铁锭
+);
 
-
-//[组件&元件 (1 to 16384 to 4096...)]
+//[组件&元件]
 //[物品]
 //1K
-//+正常配方
+recipes.addShaped(<appliedenergistics2:material:35>,
+    [[<ore:dustRedstone>,<ore:crystalCertusQuartz>,<ore:dustRedstone>],//红石粉,赛特斯石英,红石粉
+     [<ore:crystalCertusQuartz>,<appliedenergistics2:material:22>,<ore:crystalCertusQuartz>],//赛特斯石英,逻辑处理器,赛特斯石英
+     [<ore:dustRedstone>,<ore:crystalCertusQuartz>,<ore:dustRedstone>]]//红石粉,赛特斯石英,红石粉
+);
 recipes.addShapeless(<appliedenergistics2:material:35>,
     [<appliedenergistics2:material:36>]//4K组件
 );
