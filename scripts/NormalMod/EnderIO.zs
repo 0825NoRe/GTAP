@@ -439,21 +439,45 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //太阳能板
 //简易 2EU/t ULV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>])//
+//    .inputs([<>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>])//
 //    .outputs([<enderio:block_solar_panel:0>])
 //    .EUt(30)
 //    .duration(200)
 //    .buildAndRegister();
 //普通 8EU/t ULV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>])//
+//    .inputs([<>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>])//
 //    .outputs([<enderio:block_solar_panel:1>])
 //    .EUt(30)
 //    .duration(200)
 //    .buildAndRegister();
 //强化 32EU/t LV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>])//
+//    .inputs([<>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>])//
 //    .fluidInputs([<>])//
 //    .outputs([<enderio:block_solar_panel:2>])
 //    .EUt(30)
@@ -461,7 +485,15 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //脉冲 128EU/t MV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>])//
+//    .inputs([<>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>])//
 //    .fluidInputs([<>])//
 //    .outputs([<enderio:block_solar_panel:3>])
 //    .EUt(120)
@@ -469,7 +501,15 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //晶化 512EU/t HV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>])//
+//    .inputs([<>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>])//
 //    .fluidInputs([<>])//
 //    .outputs([<enderio:block_solar_panel:4>])
 //    .EUt(480)
@@ -477,7 +517,15 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //旋律 2048EU/t EV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>])//
+//    .inputs([<>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>])//
 //    .fluidInputs([<>])//
 //    .outputs([<enderio:block_solar_panel:5>])
 //    .EUt(1920)
@@ -485,7 +533,15 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //恒星 8192EU/t IV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>])//
+//    .inputs([<>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>,
+//             <>])//
 //    .fluidInputs([<>])//
 //    .outputs([<enderio:block_solar_panel:6>])
 //    .EUt(7680)
