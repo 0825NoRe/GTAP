@@ -112,8 +112,8 @@ recipes.addShaped(<enderio:item_basic_capacitor:0>,
      [<enderio:item_material:20>,<ore:nuggetGold>,null]]//基岩粉,金粒,空
 );
 RecipeMap.getByName("assembler").recipeBuilder()
-    .inputs([<ore:nuggetGold>*4,//金粒
-                  <enderio:item_material:20>*2,//基岩粉
+    .inputs([<ore:nuggetGold>*4,//金粒*4
+                  <enderio:item_material:20>*2,//基岩粉*2
                   <ore:dustRedstone>])//红石粉
     .outputs([<enderio:item_basic_capacitor:0>])
     .EUt(16)
@@ -121,36 +121,36 @@ RecipeMap.getByName("assembler").recipeBuilder()
     .buildAndRegister();
 //双层2.0
 recipes.addShaped(<enderio:item_basic_capacitor:1>,
-    [[null,<ore:plateEnergeticAlloy>,null],//空,充金板,空
+    [[null,<ore:plateEnergeticAlloy>,null],//空,充能合金板,空
      [<enderio:item_basic_capacitor:0>,<ore:dustCoal>,<enderio:item_basic_capacitor:0>],//基础电容,煤粉,基础电容
-     [null,<ore:plateEnergeticAlloy>,null]]//空,充金板,空
+     [null,<ore:plateEnergeticAlloy>,null]]//空,充能合金板,空
 );
 RecipeMap.getByName("assembler").recipeBuilder()
-    .inputs([<ore:plateEnergeticAlloy>*2,
-                  <enderio:item_basic_capacitor:0>*2,
-                  <ore:dustCoal>])
+    .inputs([<ore:plateEnergeticAlloy>*2,//充能合金板*2
+                  <enderio:item_basic_capacitor:0>*2,//基础电容*2
+                  <ore:dustCoal>])//煤粉
     .outputs([<enderio:item_basic_capacitor:1>])
     .EUt(16)
     .duration(100)
     .buildAndRegister();
 //八位3.0
 recipes.addShaped(<enderio:item_basic_capacitor:2>,
-    [[null,<ore:plateVibrantAlloy>,null],//空,脉金板,空
-     [<enderio:item_basic_capacitor:1>,<ore:blockGlowstone>,<enderio:item_basic_capacitor:1>],//双层电容,荧石,双层电容
-     [null,<ore:plateVibrantAlloy>,null]]//空,脉金板,空
+    [[null,<ore:plateVibrantAlloy>,null],//空,脉冲合金板,空
+     [<enderio:item_basic_capacitor:1>,<ore:blockGlowstone>,<enderio:item_basic_capacitor:1>],//双层电容,荧石块,双层电容
+     [null,<ore:plateVibrantAlloy>,null]]//空,脉冲合金板,空
 );
 RecipeMap.getByName("assembler").recipeBuilder()
-    .inputs([<ore:plateVibrantAlloy>*2,
-                  <enderio:item_basic_capacitor:1>*2,
-                  <ore:blockGlowstone>])
+    .inputs([<ore:plateVibrantAlloy>*2,//脉冲合金板*2
+                  <enderio:item_basic_capacitor:1>*2,//双层电容*2
+                  <ore:blockGlowstone>])//荧石块
     .outputs([<enderio:item_basic_capacitor:2>])
     .EUt(16)
     .duration(100)
     .buildAndRegister();
 //晶金3.5
 RecipeMap.getByName("assembler").recipeBuilder()
-    .inputs([<ore:plateCrystallineAlloy>*2,//晶金板
-                  <enderio:item_basic_capacitor:2>,//八位电容
+    .inputs([<ore:plateCrystallineAlloy>*2,//晶金板*2
+                  <enderio:item_basic_capacitor:2>,//八位电容*2
                   <ore:dustPrismarine>])//海晶砂粒
     .outputs([<enderio:item_capacitor_crystalline>])
     .EUt(30)
@@ -158,7 +158,7 @@ RecipeMap.getByName("assembler").recipeBuilder()
     .buildAndRegister();
 //旋金4.0
 RecipeMap.getByName("assembler").recipeBuilder()
-    .inputs([<ore:plateMelodicAlloy>*2,//旋金板
+    .inputs([<ore:plateMelodicAlloy>*2,//旋律合金板*2
                   <enderio:item_capacitor_crystalline>,//晶金电容
                   <ore:ingotEndSteel>])//末影钢锭
     .outputs([<enderio:item_capacitor_melodic>])
@@ -167,7 +167,7 @@ RecipeMap.getByName("assembler").recipeBuilder()
     .buildAndRegister();
 //恒金5.0
 RecipeMap.getByName("assembler").recipeBuilder()
-    .inputs([<ore:plateStellarAlloy>*2,//恒金板
+    .inputs([<ore:plateStellarAlloy>*2,//恒星合金板*2
                   <enderio:item_capacitor_melodic>,//旋金电容
                   <minecraft:shulker_shell>])//潜影壳
     .outputs([<enderio:item_capacitor_stellar>])
@@ -324,21 +324,21 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
 //石英玻璃
 //普通
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
-    .inputs([<ore:gemQuartzite>*4])//石英岩
+    .inputs([<ore:gemQuartzite>*4])//石英岩*4
     .notConsumable([<gregtech:meta_item_1:18>])//模具：块
     .outputs([<enderio:block_fused_quartz>])
     .EUt(16)
     .duration(200)
     .buildAndRegister();
 RecipeMap.getByName("alloy_smelter").recipeBuilder()
-    .inputs([<ore:gemQuartz>*4])//下界石英
+    .inputs([<ore:gemQuartz>*4])//下界石英*4
     .notConsumable([<gregtech:meta_item_1:18>])
     .outputs([<enderio:block_fused_quartz>])
     .EUt(16)
     .duration(200)
     .buildAndRegister();
 RecipeMap.getByName("alloy_smelter").recipeBuilder()
-    .inputs([<ore:gemCertusQuartz>*4])//赛特斯石英
+    .inputs([<ore:gemCertusQuartz>*4])//赛特斯石英*4
     .notConsumable([<gregtech:meta_item_1:18>])
     .outputs([<enderio:block_fused_quartz>])
     .EUt(16)
@@ -370,7 +370,7 @@ RecipeMap.getByName("macerator").recipeBuilder()//研磨机
     .buildAndRegister();
 //基岩粉块 压缩&解压
 RecipeMap.getByName("packer").recipeBuilder()//打包机
-    .inputs([<enderio:item_material:20>*9])//基岩粉
+    .inputs([<enderio:item_material:20>*9])//基岩粉*9
     .outputs([<enderio:block_infinity:0>])
     .EUt(16)
     .duration(200)
@@ -384,7 +384,7 @@ RecipeMap.getByName("packer").recipeBuilder()//打包机
     .buildAndRegister();
 //压缩基岩粉块 压缩&解压
 RecipeMap.getByName("packer").recipeBuilder()//打包机
-    .inputs([<enderio:block_infinity:0>*9])//基岩粉块
+    .inputs([<enderio:block_infinity:0>*9])//基岩粉块*9
     .outputs([<enderio:block_infinity:1>])
     .EUt(16)
     .duration(200)
@@ -398,7 +398,7 @@ RecipeMap.getByName("packer").recipeBuilder()//打包机
     .buildAndRegister();
 //二重压缩基岩粉块 压缩&解压
 RecipeMap.getByName("packer").recipeBuilder()//打包机
-    .inputs([<enderio:block_infinity:1>*9])//压缩基岩粉块
+    .inputs([<enderio:block_infinity:1>*9])//压缩基岩粉块*9
     .outputs([<enderio:block_infinity:2>])
     .EUt(16)
     .duration(200)
@@ -418,11 +418,11 @@ recipes.addShaped(<enderio:item_conduit_probe>,
      [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]//铁板,铁板,铁板
 );
 //旅行权杖
-recipes.addShaped(<enderio:item_travel_staff>,
-    [[null,null,<gregtech:meta_item_1:233>],//空,空,LV发射器
-     [null,<ore:rodDarkSteel>,null],//空,玄钢杆,空
-     [<ore:rodDarkSteel>,null,null]]//玄钢杆,空,空
-);
+//recipes.addShaped(<enderio:item_travel_staff>,
+//    [[null,null,<gregtech:meta_item_1:233>],//空,空,LV发射器
+//     [null,<ore:rodDarkSteel>,null],//空,玄钢杆,空
+//     [<>,null,null]]//LV锂电池,空,空
+//);
 //以太扳手
 recipes.addShaped(<enderio:item_yeta_wrench>,
     [[<ore:plateElectricalSteel>,null,<ore:plateElectricalSteel>],//磁钢板,空,磁钢板
