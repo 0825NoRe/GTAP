@@ -58,13 +58,13 @@ RecipeMap.getByName("macerator").recipeBuilder()//研磨机
     .EUt(16)
     .duration(200)
     .buildAndRegister();
-//RecipeMap.getByName("").recipeBuilder()//高压釜
-//    .inputs([<>])//充能水晶粉
-//    .fluidInputs([<fluid:water>*1000])
-//    .outputs([<ore:itemPulsatingCrystal>])
-//    .EUt(30)
-//    .duration(600)
-//    .buildAndRegister();
+RecipeMap.getByName("autoclave").recipeBuilder()//高压釜
+    .inputs([<enderio:item_material:36>])//充能水晶粉
+    .fluidInputs([<fluid:water>*1000])//水
+    .outputs([<ore:itemPulsatingCrystal>])
+    .EUt(30)
+    .duration(600)
+    .buildAndRegister();
 //Z-逻辑控制器
 RecipeMap.getByName("slice_and_splice").recipeBuilder()//头颅装配机
     .inputs([<ore:plateSoulariumAlloy>*2,//魂金板
@@ -112,9 +112,9 @@ recipes.addShaped(<enderio:item_basic_capacitor:0>,
      [<enderio:item_material:20>,<ore:nuggetGold>,null]]//基岩粉,金粒,空
 );
 RecipeMap.getByName("assembler").recipeBuilder()
-    .inputs([<ore:nuggetGold>*4,
-                  <enderio:item_material:20>*2,
-                  <ore:dustRedstone>])
+    .inputs([<ore:nuggetGold>*4,//金粒
+                  <enderio:item_material:20>*2,//基岩粉
+                  <ore:dustRedstone>])//红石粉
     .outputs([<enderio:item_basic_capacitor:0>])
     .EUt(16)
     .duration(100)
@@ -638,5 +638,12 @@ recipes.addShaped(<enderio:item_conduit_facade:3>*64,
 //    .duration()
 //    .buildAndRegister();
 
-//?
-
+//营养精华液
+//RecipeMap.getByName("").recipeBuilder()//
+//    .inputs([<>,//
+//             <>])//
+//    .fluidInputs([<>])//
+//    .fluidOutputs([<>])
+//    .EUt()
+//    .duration()
+//    .buildAndRegister();
