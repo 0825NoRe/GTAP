@@ -439,8 +439,8 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //太阳能板
 //简易 2EU/t ULV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>*3,//光伏板*3
-//             <>,//
+//    .inputs([<>*4,//光伏板*4
+//             <ore:circuitUlv>*2,//ULV电路板*2
 //             <>,//
 //             <>,//
 //             <>,//
@@ -454,7 +454,7 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //普通 8EU/t ULV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>,//
+//    .inputs([<>*8,//光伏板*8
 //             <>,//
 //             <>,//
 //             <>,//
@@ -469,7 +469,7 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //强化 32EU/t LV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>,//
+//    .inputs([<>*16,//光伏板*16
 //             <>,//
 //             <>,//
 //             <>,//
@@ -485,7 +485,7 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //脉冲 128EU/t MV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>,//
+//    .inputs([<>*32,//光伏板*32
 //             <>,//
 //             <>,//
 //             <>,//
@@ -501,7 +501,7 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //晶化 512EU/t HV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>,//
+//    .inputs([<>*64,//光伏板*64
 //             <>,//
 //             <>,//
 //             <>,//
@@ -517,8 +517,8 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //旋律 2048EU/t EV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>,//
-//             <>,//
+//    .inputs([<>*64,//光伏板*64
+//             <>*64,//光伏板*64
 //             <>,//
 //             <>,//
 //             <>,//
@@ -533,10 +533,10 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //恒星 8192EU/t IV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>,//
-//             <>,//
-//             <>,//
-//             <>,//
+//    .inputs([<>*64,//光伏板*64
+//             <>*64,//光伏板*64
+//             <>*64,//光伏板*64
+//             <>*64,//光伏板*64
 //             <>,//
 //             <>,//
 //             <>,//
