@@ -439,9 +439,9 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //太阳能板
 //简易 2EU/t ULV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>*4,//光伏板*4
+//    .inputs([<enderio:item_material:3>*4,//光伏板*4
+//             <>*2,//1A-红色合金线缆[ULV超导线]*2
 //             <ore:circuitUlv>*2,//ULV电路板*2
-//             <>,//
 //             <>,//
 //             <>,//
 //             <>,//
@@ -454,9 +454,9 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //普通 8EU/t ULV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>*8,//光伏板*8
-//             <>,//
-//             <>,//
+//    .inputs([<enderio:item_material:3>*8,//光伏板*8
+//             <>*8,//1A-红色合金线缆[ULV超导线]*8
+//             <ore:circuitUlv>*4,//ULV电路板*4
 //             <>,//
 //             <>,//
 //             <>,//
@@ -469,9 +469,9 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //强化 32EU/t LV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>*16,//光伏板*16
-//             <>,//
-//             <>,//
+//    .inputs([<enderio:item_material:3>*16,//光伏板*16
+//             <>*8,//1A-磷化镓导线[LV超导线]*8
+//             <ore:circuitLv>*4,//LV电路板*4
 //             <>,//
 //             <>,//
 //             <>,//
@@ -485,9 +485,9 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //脉冲 128EU/t MV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>*32,//光伏板*32
-//             <>,//
-//             <>,//
+//    .inputs([<enderio:item_material:3>*32,//光伏板*32
+//             <>*8,//1A-二硼化镁导线[MV超导线]*8
+//             <ore:circuitMv>*4,//MV电路板*4
 //             <>,//
 //             <>,//
 //             <>,//
@@ -501,9 +501,9 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //晶化 512EU/t HV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>*64,//光伏板*64
-//             <>,//
-//             <>,//
+//    .inputs([<enderio:item_material:3>*64,//光伏板*64
+//             <>*8,//1A-汞钡铜酸钙导线[HV超导线]*8
+//             <ore:circuitHv>*4,//HV电路板*4
 //             <>,//
 //             <>,//
 //             <>,//
@@ -517,10 +517,10 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //旋律 2048EU/t EV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>*64,//光伏板*64
-//             <>*64,//光伏板*64
-//             <>,//
-//             <>,//
+//    .inputs([<enderio:item_material:3>*64,//光伏板*64
+//             <enderio:item_material:3>*64,//光伏板*64
+//             <>*8,//1A-三铂化铀导线[EV超导线]*8
+//             <ore:circuitEv>*4,//EV电路板*4
 //             <>,//
 //             <>,//
 //             <>,//
@@ -533,12 +533,12 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //    .buildAndRegister();
 //恒星 8192EU/t IV
 //RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<>*64,//光伏板*64
-//             <>*64,//光伏板*64
-//             <>*64,//光伏板*64
-//             <>*64,//光伏板*64
-//             <>,//
-//             <>,//
+//    .inputs([<enderio:item_material:3>*64,//光伏板*64
+//             <enderio:item_material:3>*64,//光伏板*64
+//             <enderio:item_material:3>*64,//光伏板*64
+//             <enderio:item_material:3>*64,//光伏板*64
+//             <>*8,//1A-?导线[IV超导线]*8
+//             <ore:circuitIv>*4,//IV电路板*4
 //             <>,//
 //             <>,//
 //             <>])//
