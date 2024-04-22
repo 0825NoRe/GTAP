@@ -22,6 +22,7 @@ function(out,input,info){
 null
 );
 
+//材料
 //光伏粉&板
 RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
     .inputs([<ore:dustLapis>,//青金石粉
@@ -59,9 +60,9 @@ RecipeMap.getByName("macerator").recipeBuilder()//研磨机
     .duration(200)
     .buildAndRegister();
 RecipeMap.getByName("autoclave").recipeBuilder()//高压釜
-    .inputs([<enderio:item_material:36>])//充能水晶粉
+    .inputs([<ore:itemPulsatingPowder>])//充能水晶粉
     .fluidInputs([<fluid:water>*1000])//水
-    .outputs([<ore:itemPulsatingCrystal>])
+    .outputs([<enderio:item_material:14>])
     .EUt(30)
     .duration(600)
     .buildAndRegister();
@@ -103,6 +104,121 @@ RecipeMap.getByName("soul_binder").recipeBuilder()//灵魂绑定器
     .EUt(24)
     .duration(200)
     .buildAndRegister();
+//纯净玻璃
+//普通
+furnace.addRecipe(<enderio:block_fused_glass>, 
+                  <minecraft:glass>,//玻璃
+                  0.1);
+//黑暗
+RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
+    .inputs([<ore:dyeBlack>,//黑色染料
+             <enderio:block_fused_glass>])//纯净玻璃
+    .outputs([<enderio:block_dark_fused_glass>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+//荧光
+RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
+    .inputs([<ore:dustGlowstone>,//荧石粉
+             <enderio:block_fused_glass>])//纯净玻璃
+    .outputs([<enderio:block_enlightened_fused_glass>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+//石英玻璃
+//普通
+RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
+    .inputs([<ore:gemQuartzite>*4])//石英岩*4
+    .notConsumable([<gregtech:meta_item_1:18>])//模具：块
+    .outputs([<enderio:block_fused_quartz>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+RecipeMap.getByName("alloy_smelter").recipeBuilder()
+    .inputs([<ore:gemQuartz>*4])//下界石英*4
+    .notConsumable([<gregtech:meta_item_1:18>])
+    .outputs([<enderio:block_fused_quartz>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+RecipeMap.getByName("alloy_smelter").recipeBuilder()
+    .inputs([<ore:gemCertusQuartz>*4])//赛特斯石英*4
+    .notConsumable([<gregtech:meta_item_1:18>])
+    .outputs([<enderio:block_fused_quartz>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+//黑暗
+RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
+    .inputs([<ore:dyeBlack>,//黑色染料
+             <ore:fusedQuartz>])//石英玻璃
+    .outputs([<enderio:block_dark_fused_quartz>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+//荧光
+RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
+    .inputs([<ore:dustGlowstone>,//荧石粉
+             <ore:fusedQuartz>])//石英玻璃
+    .outputs([<enderio:block_enlightened_fused_quartz>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+
+//基岩尘
+RecipeMap.getByName("macerator").recipeBuilder()//研磨机
+    .inputs([<enderio:item_material:20>])//基岩粉
+    .outputs([<enderio:block_infinity_fog>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+//基岩粉块 压缩&解压
+RecipeMap.getByName("packer").recipeBuilder()//打包机
+    .inputs([<enderio:item_material:20>*9])//基岩粉*9
+    .outputs([<enderio:block_infinity:0>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+RecipeMap.getByName("packer").recipeBuilder()//打包机
+    .inputs([<enderio:block_infinity:0>])//基岩粉块
+    .circuit(1)
+    .outputs([<enderio:item_material:20>*9])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+//压缩基岩粉块 压缩&解压
+RecipeMap.getByName("packer").recipeBuilder()//打包机
+    .inputs([<enderio:block_infinity:0>*9])//基岩粉块*9
+    .outputs([<enderio:block_infinity:1>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+RecipeMap.getByName("packer").recipeBuilder()//打包机
+    .inputs([<enderio:block_infinity:1>])//压缩基岩粉块
+    .circuit(1)
+    .outputs([<enderio:block_infinity:0>*9])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+//二重压缩基岩粉块 压缩&解压
+RecipeMap.getByName("packer").recipeBuilder()//打包机
+    .inputs([<enderio:block_infinity:1>*9])//压缩基岩粉块*9
+    .outputs([<enderio:block_infinity:2>])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+RecipeMap.getByName("packer").recipeBuilder()//打包机
+    .inputs([<enderio:block_infinity:2>])//二重压缩基岩粉块
+    .circuit(1)
+    .outputs([<enderio:block_infinity:1>*9])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+
+//道具
+//导管提取速率升级
+
+//导管提取速率降级
 
 //电容
 //基础1.0
@@ -174,7 +290,6 @@ RecipeMap.getByName("assembler").recipeBuilder()
     .EUt(480)
     .duration(200)
     .buildAndRegister();
-
 //物品过滤器
 //基础
 recipes.addShaped(<enderio:item_basic_item_filter>,
@@ -299,117 +414,7 @@ recipes.addShaped(<enderio:item_redstone_sensor_filter>,
 recipes.addShaped(<enderio:item_redstone_timer_filter>,
     [[<ore:ingotRedstoneAlloy>,<enderio:item_basic_item_filter>,<minecraft:clock>]]//红石合金锭,基础过滤器,时钟
 );
-
-//纯净玻璃
-//普通
-furnace.addRecipe(<enderio:block_fused_glass>, 
-                  <minecraft:glass>,//玻璃
-                  0.1);
-//黑暗
-RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
-    .inputs([<ore:dyeBlack>,//黑色染料
-             <enderio:block_fused_glass>])//纯净玻璃
-    .outputs([<enderio:block_dark_fused_glass>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-//荧光
-RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
-    .inputs([<ore:dustGlowstone>,//荧石粉
-             <enderio:block_fused_glass>])//纯净玻璃
-    .outputs([<enderio:block_enlightened_fused_glass>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-//石英玻璃
-//普通
-RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
-    .inputs([<ore:gemQuartzite>*4])//石英岩*4
-    .notConsumable([<gregtech:meta_item_1:18>])//模具：块
-    .outputs([<enderio:block_fused_quartz>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-RecipeMap.getByName("alloy_smelter").recipeBuilder()
-    .inputs([<ore:gemQuartz>*4])//下界石英*4
-    .notConsumable([<gregtech:meta_item_1:18>])
-    .outputs([<enderio:block_fused_quartz>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-RecipeMap.getByName("alloy_smelter").recipeBuilder()
-    .inputs([<ore:gemCertusQuartz>*4])//赛特斯石英*4
-    .notConsumable([<gregtech:meta_item_1:18>])
-    .outputs([<enderio:block_fused_quartz>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-//黑暗
-RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
-    .inputs([<ore:dyeBlack>,//黑色染料
-             <ore:fusedQuartz>])//石英玻璃
-    .outputs([<enderio:block_dark_fused_quartz>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-//荧光
-RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
-    .inputs([<ore:dustGlowstone>,//荧石粉
-             <ore:fusedQuartz>])//石英玻璃
-    .outputs([<enderio:block_enlightened_fused_quartz>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-
-//基岩尘
-RecipeMap.getByName("macerator").recipeBuilder()//研磨机
-    .inputs([<enderio:item_material:20>])//基岩粉
-    .outputs([<enderio:block_infinity_fog>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-//基岩粉块 压缩&解压
-RecipeMap.getByName("packer").recipeBuilder()//打包机
-    .inputs([<enderio:item_material:20>*9])//基岩粉*9
-    .outputs([<enderio:block_infinity:0>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-RecipeMap.getByName("packer").recipeBuilder()//打包机
-    .inputs([<enderio:block_infinity:0>])//基岩粉块
-    .circuit(1)
-    .outputs([<enderio:item_material:20>*9])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-//压缩基岩粉块 压缩&解压
-RecipeMap.getByName("packer").recipeBuilder()//打包机
-    .inputs([<enderio:block_infinity:0>*9])//基岩粉块*9
-    .outputs([<enderio:block_infinity:1>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-RecipeMap.getByName("packer").recipeBuilder()//打包机
-    .inputs([<enderio:block_infinity:1>])//压缩基岩粉块
-    .circuit(1)
-    .outputs([<enderio:block_infinity:0>*9])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-//二重压缩基岩粉块 压缩&解压
-RecipeMap.getByName("packer").recipeBuilder()//打包机
-    .inputs([<enderio:block_infinity:1>*9])//压缩基岩粉块*9
-    .outputs([<enderio:block_infinity:2>])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
-RecipeMap.getByName("packer").recipeBuilder()//打包机
-    .inputs([<enderio:block_infinity:2>])//二重压缩基岩粉块
-    .circuit(1)
-    .outputs([<enderio:block_infinity:1>*9])
-    .EUt(16)
-    .duration(200)
-    .buildAndRegister();
+//荧石纳米颗粒
 
 //导管探测器
 recipes.addShaped(<enderio:item_conduit_probe>,
@@ -418,11 +423,11 @@ recipes.addShaped(<enderio:item_conduit_probe>,
      [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]//铁板,铁板,铁板
 );
 //旅行权杖
-//recipes.addShaped(<enderio:item_travel_staff>,
-//    [[null,null,<gregtech:meta_item_1:233>],//空,空,LV发射器
-//     [null,<ore:rodDarkSteel>,null],//空,玄钢杆,空
-//     [<>,null,null]]//LV锂电池,空,空
-//);
+recipes.addShaped(<enderio:item_travel_staff>,
+   [[null,null,<gregtech:meta_item_1:233>],//空,空,LV发射器
+    [null,<ore:rodDarkSteel>,null],//空,玄钢杆,空
+    [<ore:batteryLv>,null,null]]//LV电池,空,空
+);
 //以太扳手
 recipes.addShaped(<enderio:item_yeta_wrench>,
     [[<ore:plateElectricalSteel>,null,<ore:plateElectricalSteel>],//磁钢板,空,磁钢板
@@ -436,100 +441,44 @@ recipes.addShaped(<enderio:item_soul_vial>,
      [null,<ore:fusedQuartz>,null]]//空,石英玻璃,空
 );
 
-//太阳能板
-//简易 2EU/t ULV
-//RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<enderio:item_material:3>*4,//光伏板*4
-//             <>*2,//1A-红色合金线缆[ULV超导线]*2
-//             <ore:circuitUlv>*2,//ULV电路板*2
-//             <>*3,//铁板*3
-//             <>*4,//铜螺丝*4
-//             <>])//铜弹簧
-//    .outputs([<enderio:block_solar_panel:0>])
-//    .EUt(30)
-//    .duration(200)
-//    .buildAndRegister();
-//普通 8EU/t ULV
-//RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<enderio:item_material:3>*8,//光伏板*8
-//             <>*8,//1A-红色合金线缆[ULV超导线]*8
-//             <ore:circuitUlv>*4,//ULV电路板*4
-//             <>*3,//铜板*3
-//             <>*4,//青铜螺丝*4
-//             <>])//铜弹簧
-//    .outputs([<enderio:block_solar_panel:1>])
-//    .EUt(30)
-//    .duration(200)
-//    .buildAndRegister();
-//强化 32EU/t LV
-//RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<enderio:item_material:3>*16,//光伏板*16
-//             <>*8,//1A-磷化镓导线[LV超导线]*8
-//             <ore:circuitLv>*4,//LV电路板*4
-//             <>*3,//脉冲铁板*3
-//             <>*4,//钢螺丝*4
-//             <>])//LV锂电池
-//    .fluidInputs([<>])//冷却剂
-//    .outputs([<enderio:block_solar_panel:2>])
-//    .EUt(30)
-//    .duration(200)
-//    .buildAndRegister();
-//脉冲 128EU/t MV
-//RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<enderio:item_material:3>*32,//光伏板*32
-//             <>*8,//1A-二硼化镁导线[MV超导线]*8
-//             <ore:circuitMv>*4,//MV电路板*4
-//             <>*3,//脉冲合金板*3
-//             <>*4,//铝螺丝*4
-//             <>])//MV锂电池
-//    .fluidInputs([<>])//冷却剂
-//    .outputs([<enderio:block_solar_panel:3>])
-//    .EUt(120)
-//    .duration(200)
-//    .buildAndRegister();
-//晶化 512EU/t HV
-//RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<enderio:item_material:3>*64,//光伏板*64
-//             <>*8,//1A-汞钡铜酸钙导线[HV超导线]*8
-//             <ore:circuitHv>*4,//HV电路板*4
-//             <>*3,//晶化合金板*3
-//             <>*4,//不锈钢螺丝*4
-//             <>])//HV锂电池
-//    .fluidInputs([<>])//冷却剂
-//    .outputs([<enderio:block_solar_panel:4>])
-//    .EUt(480)
-//    .duration(200)
-//    .buildAndRegister();
-//旋律 2048EU/t EV
-//RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<enderio:item_material:3>*64,//光伏板*64
-//             <enderio:item_material:3>*64,//光伏板*64
-//             <>*8,//1A-三铂化铀导线[EV超导线]*8
-//             <ore:circuitEv>*4,//EV电路板*4
-//             <>*3,//旋律合金板*3
-//             <>*4,//钛螺丝*4
-//             <>])//EV能量水晶
-//    .fluidInputs([<>])//冷却剂
-//    .outputs([<enderio:block_solar_panel:5>])
-//    .EUt(1920)
-//    .duration(200)
-//    .buildAndRegister();
-//恒星 8192EU/t IV
-//RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//    .inputs([<enderio:item_material:3>*64,//光伏板*64
-//             <enderio:item_material:3>*64,//光伏板*64
-//             <enderio:item_material:3>*64,//光伏板*64
-//             <enderio:item_material:3>*64,//光伏板*64
-//             <>*8,//1A-?导线[IV超导线]*8
-//             <ore:circuitIv>*4,//IV电路板*4
-//             <>*3,//恒星合金板*3
-//             <>*4,//钨钢螺丝*4
-//             <>])//IV兰波顿水晶
-//    .fluidInputs([<>])//冷却剂
-//    .outputs([<enderio:block_solar_panel:6>])
-//    .EUt(7680)
-//    .duration(200)
-//    .buildAndRegister();
+//功能性方块
+//玄钢砧
+
+//黑纸砧
+
+//强化黑曜石
+
+//工业隔离方块
+
+//方块检测器
+
+//方块检测器: 无声
+
+//附魔器
+
+//杀手乔
+
+//喷涂机
+
+//蓄水库
+
+//电动刷怪箱
+
+//流体储罐
+
+//高压储罐
+
+//空间传送器
+
+//流体填充器
+
+//旅行锚
+
+//传送台
+
+//推力漏斗
+
+//合成器
 
 //导管框架
 //普通
@@ -556,7 +505,6 @@ recipes.addShaped(<enderio:item_conduit_facade:3>*64,
      [<ore:fusedQuartz>,<ore:frameSteel>,<ore:fusedQuartz>],//石英玻璃,钢框架,石英玻璃
      [<ore:stickSteel>,<ore:fusedQuartz>,<ore:stickSteel>]]//钢杆,石英玻璃,钢杆
 );
-
 //导管
 //物品
 //recipes.addShaped(<>,
@@ -588,7 +536,6 @@ recipes.addShaped(<enderio:item_conduit_facade:3>*64,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
-
 //方尖碑
 //经验
 //recipes.addShaped(<>,
@@ -626,12 +573,123 @@ recipes.addShaped(<enderio:item_conduit_facade:3>*64,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
+//电动刷怪箱
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
+//虚空箱子
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
+//虚空经验箱
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
+//太阳能板
+//简易 2EU/t ULV
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:itemPlatePhotovoltaic>*4,//光伏板*4
+            <ore:cableGtSingleRedAlloy>*2,//1A-红色合金线缆[ULV超导线]*2
+            <ore:circuitUlv>*2,//ULV电路板*2
+            <ore:plateIron>*3,//铁板*3
+            <ore:screwBronze>*4,//青铜螺丝*4
+            <ore:springSmallCopper>])//小型铜弹簧
+   .outputs([<enderio:block_solar_panel:0>])
+   .EUt(30)
+   .duration(200)
+   .buildAndRegister();
+//普通 8EU/t ULV
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:itemPlatePhotovoltaic>*8,//光伏板*8
+            <ore:cableGtSingleRedAlloy>*8,//1A-红色合金线缆[ULV超导线]*8
+            <ore:circuitUlv>*4,//ULV电路板*4
+            <ore:plateBronze>*3,//青铜板*3
+            <ore:screwBronze>*4,//青铜螺丝*4
+            <ore:springSmallCopper>])//小型铜弹簧
+   .outputs([<enderio:block_solar_panel:1>])
+   .EUt(30)
+   .duration(200)
+   .buildAndRegister();
+//强化 32EU/t LV
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:itemPlatePhotovoltaic>*16,//光伏板*16
+            <ore:wireGtSingleManganesePhosphide>*8,//1A-磷化锰导线[LV超导线]*8
+            <ore:circuitLv>*4,//LV电路板*4
+            <ore:platePulsatingIron>*3,//脉冲铁板*3
+            <ore:screwSteel>*4,//钢螺丝*4
+            <ore:batteryLv>])//LV电池
+   .fluidInputs([<fluid:sodium_potassium>*1000])//钠钾共晶合金
+   .outputs([<enderio:block_solar_panel:2>])
+   .EUt(30)
+   .duration(200)
+   .buildAndRegister();
+//脉冲 128EU/t MV
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:itemPlatePhotovoltaic>*32,//光伏板*32
+            <ore:wireGtSingleMagnesiumDiboride>*8,//1A-二硼化镁导线[MV超导线]*8
+            <ore:circuitMv>*4,//MV电路板*4
+            <ore:plateVibrantAlloy>*3,//脉冲合金板*3
+            <ore:screwAluminium>*4,//铝螺丝*4
+            <ore:batteryMv>])//MV电池
+   .fluidInputs([<fluid:sodium_potassium>*1000])//钠钾共晶合金
+   .outputs([<enderio:block_solar_panel:3>])
+   .EUt(120)
+   .duration(200)
+   .buildAndRegister();
+//晶化 512EU/t HV
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:itemPlatePhotovoltaic>*64,//光伏板*64
+            <ore:wireGtSingleMercuryBariumCalciumCuprate>*8,//1A-汞钡钙铜氧化物导线[HV超导线]*8
+            <ore:circuitHv>*4,//HV电路板*4
+            <ore:plateCrystallineAlloy>*3,//晶化合金板*3
+            <ore:screwStainlessSteel>*4,//不锈钢螺丝*4
+            <ore:batteryHv>])//HV电池
+   .fluidInputs([<fluid:sodium_potassium>*1000])//钠钾共晶合金
+   .outputs([<enderio:block_solar_panel:4>])
+   .EUt(480)
+   .duration(200)
+   .buildAndRegister();
+//旋律 2048EU/t EV
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:itemPlatePhotovoltaic>*64,//光伏板*64
+            <ore:itemPlatePhotovoltaic>*64,//光伏板*64
+            <ore:wireGtSingleUraniumTriplatinum>*8,//1A-三铂化铀导线[EV超导线]*8
+            <ore:circuitEv>*4,//EV电路板*4
+            <ore:plateMelodicAlloy>*3,//旋律合金板*3
+            <ore:screwTitanium>*4,//钛螺丝*4
+            <ore:batteryEv>])//EV电池
+   .fluidInputs([<fluid:pcb_coolant>*1000])//绝缘性多氯联苯冷却液
+   .outputs([<enderio:block_solar_panel:5>])
+   .EUt(1920)
+   .duration(200)
+   .buildAndRegister();
+//恒星 8192EU/t IV
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:itemPlatePhotovoltaic>*64,//光伏板*64
+            <ore:itemPlatePhotovoltaic>*64,//光伏板*64
+            <ore:itemPlatePhotovoltaic>*64,//光伏板*64
+            <ore:itemPlatePhotovoltaic>*64,//光伏板*64
+            <ore:wireGtSingleSamariumIronArsenicOxide>*8,//1A-钐铁砷氧化物导线[IV超导线]*8
+            <ore:circuitIv>*4,//IV电路板*4
+            <ore:plateStellarAlloy>*3,//恒星合金板*3
+            <ore:screwTungstenSteel>*4,//钨钢螺丝*4
+            <ore:batteryIv>])//IV电池
+   .fluidInputs([<fluid:pcb_coolant>*1000])//绝缘性多氯联苯冷却液
+   .outputs([<enderio:block_solar_panel:6>])
+   .EUt(7680)
+   .duration(200)
+   .buildAndRegister();
 
 //功能性流体
 //液态阳光
-//RecipeMap.getByName("").recipeBuilder()//
-//    .inputs([<>,//
-//             <>])//
+//RecipeMap.getByName("brewery").recipeBuilder()//酿造室
+//    .inputs([<>])//
 //    .fluidInputs([<>])//
 //    .fluidOutputs([<>])
 //    .EUt()
@@ -639,9 +697,8 @@ recipes.addShaped(<enderio:item_conduit_facade:3>*64,
 //    .buildAndRegister();
 
 //营养精华液
-//RecipeMap.getByName("").recipeBuilder()//
-//    .inputs([<>,//
-//             <>])//
+//RecipeMap.getByName("brewery").recipeBuilder()//酿造室
+//    .inputs([<>])//
 //    .fluidInputs([<>])//
 //    .fluidOutputs([<>])
 //    .EUt()
