@@ -1,4 +1,4 @@
-//0940/0422/24
+//0825/0423/24
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.data.IData;
 import crafttweaker.event.PlayerCraftedEvent;
@@ -47,7 +47,7 @@ RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
     .duration(200)
     .buildAndRegister();
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
-    .inputs([<ore:dustPulsatingIron>,//充能铁粉
+    .inputs([<ore:dustTinyPulsatingIron>*8,//1/9充能铁粉
                   <ore:gemDiamond>])//钻石
     .outputs([<enderio:item_material:14>])
     .EUt(30)
@@ -136,14 +136,14 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .buildAndRegister();
 RecipeMap.getByName("alloy_smelter").recipeBuilder()
     .inputs([<ore:gemQuartz>*4])//下界石英*4
-    .notConsumable([<gregtech:meta_item_1:18>])
+    .notConsumable([<gregtech:meta_item_1:18>])//模具：块
     .outputs([<enderio:block_fused_quartz>])
     .EUt(16)
     .duration(200)
     .buildAndRegister();
 RecipeMap.getByName("alloy_smelter").recipeBuilder()
     .inputs([<ore:gemCertusQuartz>*4])//赛特斯石英*4
-    .notConsumable([<gregtech:meta_item_1:18>])
+    .notConsumable([<gregtech:meta_item_1:18>])//模具：块
     .outputs([<enderio:block_fused_quartz>])
     .EUt(16)
     .duration(200)
@@ -443,43 +443,120 @@ recipes.addShaped(<enderio:item_soul_vial>,
 
 //功能性方块
 //玄钢砧
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //黑纸砧
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //强化黑曜石
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //工业隔离方块
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //方块检测器
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
+recipes.addShapeless(<>,
+    [<>]//
+);
 //方块检测器: 无声
-
+recipes.addShapeless(<>,
+    [<>]//
+);
 //附魔器
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //杀手乔
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //喷涂机
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //蓄水库
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //电动刷怪箱
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //流体储罐
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //高压储罐
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //空间传送器
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //流体填充器
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //旅行锚
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //传送台
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //推力漏斗
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //合成器
-
+//recipes.addShaped(<>,
+//    [[<>,<>,<>],//,,
+//     [<>,<>,<>],//,,
+//     [<>,<>,<>]]//,,
+//);
 //导管框架
 //普通
 recipes.addShaped(<enderio:item_conduit_facade:0>*64,
