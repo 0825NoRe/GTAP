@@ -483,13 +483,13 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
-recipes.addShapeless(<>,
-    [<>]//
-);
+//recipes.addShapeless(<>,
+//    [<>]//
+//);
 //方块检测器: 无声
-recipes.addShapeless(<>,
-    [<>]//
-);
+//recipes.addShapeless(<>,
+//    [<>]//
+//);
 //附魔器
 //recipes.addShaped(<>,
 //    [[<>,<>,<>],//,,
@@ -776,18 +776,21 @@ RecipeMap.getByName("assembler").recipeBuilder()//组装机
 
 //[[功能性流体]]
 //液态阳光
-//RecipeMap.getByName("brewery").recipeBuilder()//酿造室
-//    .inputs([<ore:dustGlowstone>])//荧石粉
-//    .fluidInputs([<fluid:water>*1000])//水
-//    .fluidOutputs([<fluid:liquid_sunshine>*1000])
-//    .EUt(30)
-//    .duration(3600)
-//    .buildAndRegister();
+RecipeMap.getByName("brewery").recipeBuilder()//酿造室
+   .inputs([<ore:dustGlowstone>])//荧石粉
+   .fluidInputs([<fluid:water>*1000])//水
+   .fluidOutputs([<fluid:liquid_sunshine>*1000])
+   .EUt(30)
+   .duration(3600)
+   .buildAndRegister();
 //营养精华液
-//RecipeMap.getByName("brewery").recipeBuilder()//酿造室
-//    .inputs([<ore:materialNutrient>])//[自定义矿辞]营养液材料
-//    .fluidInputs([<fluid:water>*1000])//水
-//    .fluidOutputs([<fluid:nutrient>*1000])
-//    .EUt(30)
-//    .duration(1200)
-//    .buildAndRegister();
+RecipeMap.getByName("brewery").recipeBuilder()//酿造室
+   .inputs([<ore:materialNutrient>])//[自定义矿辞]营养液材料
+   .fluidInputs([<fluid:water>*1000])//水
+   .fluidOutputs([<fluid:nutrient_distillation>*1000])
+   .EUt(30)
+   .duration(1200)
+   .buildAndRegister();
+//云之精华
+
+//浓缩云之精华
