@@ -5,6 +5,7 @@ import crafttweaker.event.PlayerCraftedEvent;
 
 recipes.removeByMod("enderio");
 
+//[[特殊]]
 //破损刷怪箱：类型改变
 //此为替代配方。受限于"无法记录输入物NBT并应用于输出物"，灵魂绑定器的完全GT化暂无法实现。
 recipes.addShapeless(
@@ -22,7 +23,7 @@ function(out,input,info){
 null
 );
 
-//材料
+//[[材料]]
 //光伏粉&板
 RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
     .inputs([<ore:dustLapis>,//青金石粉
@@ -105,11 +106,10 @@ RecipeMap.getByName("soul_binder").recipeBuilder()//灵魂绑定器
     .duration(200)
     .buildAndRegister();
 //纯净玻璃
-//普通
 furnace.addRecipe(<enderio:block_fused_glass>, 
                   <minecraft:glass>,//玻璃
                   0.1);
-//黑暗
+//黑暗纯净玻璃
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dyeBlack>,//黑色染料
              <enderio:block_fused_glass>])//纯净玻璃
@@ -117,7 +117,7 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .EUt(16)
     .duration(200)
     .buildAndRegister();
-//荧光
+//荧光纯净玻璃
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dustGlowstone>,//荧石粉
              <enderio:block_fused_glass>])//纯净玻璃
@@ -126,7 +126,6 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .duration(200)
     .buildAndRegister();
 //石英玻璃
-//普通
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:gemQuartzite>*4])//石英岩*4
     .notConsumable([<gregtech:meta_item_1:18>])//模具：块
@@ -148,7 +147,7 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()
     .EUt(16)
     .duration(200)
     .buildAndRegister();
-//黑暗
+//黑暗石英玻璃
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dyeBlack>,//黑色染料
              <ore:fusedQuartz>])//石英玻璃
@@ -156,7 +155,7 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .EUt(16)
     .duration(200)
     .buildAndRegister();
-//荧光
+//荧光石英玻璃
 RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .inputs([<ore:dustGlowstone>,//荧石粉
              <ore:fusedQuartz>])//石英玻璃
@@ -164,7 +163,6 @@ RecipeMap.getByName("alloy_smelter").recipeBuilder()//合金炉
     .EUt(16)
     .duration(200)
     .buildAndRegister();
-
 //基岩尘
 RecipeMap.getByName("macerator").recipeBuilder()//研磨机
     .inputs([<enderio:item_material:20>])//基岩粉
@@ -215,7 +213,7 @@ RecipeMap.getByName("packer").recipeBuilder()//打包机
     .duration(200)
     .buildAndRegister();
 
-//道具
+//[[道具]]
 //导管提取速率升级
 //recipes.addShaped(<>,
 //    [[<>,<>,<>],//,,
@@ -423,7 +421,12 @@ recipes.addShaped(<enderio:item_redstone_timer_filter>,
     [[<ore:ingotRedstoneAlloy>,<enderio:item_basic_item_filter>,<minecraft:clock>]]//红石合金锭,基础过滤器,时钟
 );
 //荧石纳米颗粒
-
+//RecipeMap.getByName("macerator").recipeBuilder()//研磨机
+//    .inputs([<ore:dustGlowstone>])//荧石粉
+//    .outputs([<>])
+//    .EUt(16)
+//    .duration(200)
+//    .buildAndRegister();
 //导管探测器
 recipes.addShaped(<enderio:item_conduit_probe>,
     [[null,<gregtech:meta_item_1:232>,null],//空,LV传感器,空
@@ -449,7 +452,7 @@ recipes.addShaped(<enderio:item_soul_vial>,
      [null,<ore:fusedQuartz>,null]]//空,石英玻璃,空
 );
 
-//功能性方块
+//[[功能性方块]]
 //玄钢砧
 //recipes.addShaped(<>,
 //    [[<>,<>,<>],//,,
@@ -771,7 +774,7 @@ RecipeMap.getByName("assembler").recipeBuilder()//组装机
    .duration(200)
    .buildAndRegister();
 
-//功能性流体
+//[[功能性流体]]
 //液态阳光
 //RecipeMap.getByName("brewery").recipeBuilder()//酿造室
 //    .inputs([<ore:dustGlowstone>])//荧石粉
