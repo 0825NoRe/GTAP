@@ -689,18 +689,17 @@ RecipeMap.getByName("assembler").recipeBuilder()//组装机
 //功能性流体
 //液态阳光
 //RecipeMap.getByName("brewery").recipeBuilder()//酿造室
-//    .inputs([<>])//
-//    .fluidInputs([<>])//
-//    .fluidOutputs([<>])
-//    .EUt()
-//    .duration()
+//    .inputs([<ore:dustGlowstone>])//荧石粉
+//    .fluidInputs([<fluid:water>*1000])//水
+//    .fluidOutputs([<fluid:>*1000])
+//    .EUt(30)
+//    .duration(3600)
 //    .buildAndRegister();
-
 //营养精华液
 //RecipeMap.getByName("brewery").recipeBuilder()//酿造室
-//    .inputs([<>])//
-//    .fluidInputs([<>])//
-//    .fluidOutputs([<>])
-//    .EUt()
-//    .duration()
+//    .inputs([<ore:nutrientMaterial>])//[自定义矿辞]营养液材料
+//    .fluidInputs([<fluid:water>*1000])//水
+//    .fluidOutputs([<fluid:>*1000])
+//    .EUt(30)
+//    .duration(1200)
 //    .buildAndRegister();
