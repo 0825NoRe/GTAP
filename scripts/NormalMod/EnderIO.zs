@@ -220,11 +220,12 @@ RecipeMap.getByName("packer").recipeBuilder()//打包机
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
+//recipes.addShapeless(<>,
+//    [<>]//
+//);
 //导管提取速率降级
-//recipes.addShaped(<>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
+//recipes.addShapeless(<>,
+//    [<>]//
 //);
 //电容
 //基础1.0
@@ -455,9 +456,9 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //[[功能性方块]]
 //玄钢砧
 //recipes.addShaped(<>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
+//    [[<ore:blockDarkSteel>,<ore:blockDarkSteel>,<ore:blockDarkSteel>],//玄钢块,玄钢块,玄钢块
+//     [null,<ore:ingotDarkSteel>,null],//空,玄钢锭,空
+//     [<ore:ingotDarkSteel>,<ore:ingotDarkSteel>,<ore:ingotDarkSteel>]]//玄钢锭,玄钢锭,玄钢锭
 //);
 //黑纸砧
 //recipes.addShaped(<>,
