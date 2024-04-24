@@ -460,12 +460,6 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //     [null,<ore:ingotDarkSteel>,null],//空,玄钢锭,空
 //     [<ore:ingotDarkSteel>,<ore:ingotDarkSteel>,<ore:ingotDarkSteel>]]//玄钢锭,玄钢锭,玄钢锭
 //);
-//黑纸砧
-//recipes.addShaped(<>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
-//);
 //强化黑曜石
 //recipes.addShaped(<>,
 //    [[<>,<>,<>],//,,
@@ -517,9 +511,9 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //);
 //电动刷怪箱
 //recipes.addShaped(<>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
+//    [[<>,<>,<>],//魂金板,,魂金板
+//     [<>,<>,<>],//,LV机身,
+//     [<>,<>,<>]]//魂金板,,魂金板
 //);
 //流体储罐
 //recipes.addShaped(<>,
