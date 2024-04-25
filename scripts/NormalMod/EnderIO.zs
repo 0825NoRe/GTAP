@@ -1,4 +1,4 @@
-//0825/0423/24
+//0914/0425/24
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.data.IData;
 import crafttweaker.event.PlayerCraftedEvent;
@@ -215,18 +215,18 @@ RecipeMap.getByName("packer").recipeBuilder()//打包机
 
 //[[道具]]
 //导管提取速率升级
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:item_extract_speed_upgrade>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
-//recipes.addShapeless(<>,
-//    [<>]//
-//);
+recipes.addShapeless(<enderio:item_extract_speed_upgrade>,
+    [<enderio:item_extract_speed_downgrade>]//导管提取速率降级
+);
 //导管提取速率降级
-//recipes.addShapeless(<>,
-//    [<>]//
-//);
+recipes.addShapeless(<enderio:item_extract_speed_downgrade>,
+    [<enderio:item_extract_speed_upgrade>]//导管提取速率升级
+);
 //电容
 //基础1.0
 recipes.addShaped(<enderio:item_basic_capacitor:0>,
@@ -234,7 +234,7 @@ recipes.addShaped(<enderio:item_basic_capacitor:0>,
      [<ore:nuggetGold>,<ore:dustRedstone>,<ore:nuggetGold>],//金粒,红石粉,金粒
      [<enderio:item_material:20>,<ore:nuggetGold>,null]]//基岩粉,金粒,空
 );
-RecipeMap.getByName("assembler").recipeBuilder()
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
     .inputs([<ore:nuggetGold>*4,//金粒*4
                   <enderio:item_material:20>*2,//基岩粉*2
                   <ore:dustRedstone>])//红石粉
@@ -248,7 +248,7 @@ recipes.addShaped(<enderio:item_basic_capacitor:1>,
      [<enderio:item_basic_capacitor:0>,<ore:dustCoal>,<enderio:item_basic_capacitor:0>],//基础电容,煤粉,基础电容
      [null,<ore:plateEnergeticAlloy>,null]]//空,充能合金板,空
 );
-RecipeMap.getByName("assembler").recipeBuilder()
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
     .inputs([<ore:plateEnergeticAlloy>*2,//充能合金板*2
                   <enderio:item_basic_capacitor:0>*2,//基础电容*2
                   <ore:dustCoal>])//煤粉
@@ -262,7 +262,7 @@ recipes.addShaped(<enderio:item_basic_capacitor:2>,
      [<enderio:item_basic_capacitor:1>,<ore:blockGlowstone>,<enderio:item_basic_capacitor:1>],//双层电容,荧石块,双层电容
      [null,<ore:plateVibrantAlloy>,null]]//空,脉冲合金板,空
 );
-RecipeMap.getByName("assembler").recipeBuilder()
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
     .inputs([<ore:plateVibrantAlloy>*2,//脉冲合金板*2
                   <enderio:item_basic_capacitor:1>*2,//双层电容*2
                   <ore:blockGlowstone>])//荧石块
@@ -271,7 +271,7 @@ RecipeMap.getByName("assembler").recipeBuilder()
     .duration(100)
     .buildAndRegister();
 //晶金3.5
-RecipeMap.getByName("assembler").recipeBuilder()
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
     .inputs([<ore:plateCrystallineAlloy>*2,//晶金板*2
                   <enderio:item_basic_capacitor:2>,//八位电容*2
                   <ore:dustPrismarine>])//海晶砂粒
@@ -280,7 +280,7 @@ RecipeMap.getByName("assembler").recipeBuilder()
     .duration(200)
     .buildAndRegister();
 //旋金4.0
-RecipeMap.getByName("assembler").recipeBuilder()
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
     .inputs([<ore:plateMelodicAlloy>*2,//旋律合金板*2
                   <enderio:item_capacitor_crystalline>,//晶金电容
                   <ore:ingotEndSteel>])//末影钢锭
@@ -289,7 +289,7 @@ RecipeMap.getByName("assembler").recipeBuilder()
     .duration(200)
     .buildAndRegister();
 //恒金5.0
-RecipeMap.getByName("assembler").recipeBuilder()
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
     .inputs([<ore:plateStellarAlloy>*2,//恒星合金板*2
                   <enderio:item_capacitor_melodic>,//旋金电容
                   <minecraft:shulker_shell>])//潜影壳
@@ -424,7 +424,7 @@ recipes.addShaped(<enderio:item_redstone_timer_filter>,
 //荧石纳米颗粒
 //RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
 //    .inputs([<ore:dustGlowstone>,//荧石粉
-               <ore:dustClay>])//粘土粉
+//             <ore:dustClay>])//粘土粉
 //    .outputs([<enderio:block_holier_fog>*2])
 //    .EUt(16)
 //    .duration(200)
@@ -514,11 +514,11 @@ recipes.addShapeless(<enderio:block_detector_block_silent>,
 //     [<>,<>,<>]]//,,
 //);
 //电动刷怪箱
-//recipes.addShaped(<enderio:block_powered_spawner>,
-//    [[<>,<>,<>],//魂金板,,魂金板
-//     [<>,<>,<>],//,LV机身,
-//     [<>,<>,<>]]//魂金板,,魂金板
-//);
+recipes.addShaped(<enderio:block_powered_spawner>,
+    [[<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>],//魂金板,魂金板,魂金板
+     [<ore:plateSoulariumAlloy>,<enderio:item_material:41>,<ore:plateSoulariumAlloy>],//魂金板,Z-逻辑控制器,魂金板
+     [<ore:plateElectricalSteel>,null,<ore:plateElectricalSteel>]]//磁钢板,LV机身,磁钢板
+);
 //流体储罐
 //recipes.addShaped(<enderio:block_tank:0>,
 //    [[<>,<>,<>],//,,
