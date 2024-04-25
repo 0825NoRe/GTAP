@@ -577,57 +577,57 @@ RecipeMap.getByName("assembler").recipeBuilder()//组装机
 //普通
 recipes.addShaped(<enderio:item_conduit_facade:0>*64,
     [[<ore:stickIron>,<ore:plateIron>,<ore:stickIron>],//铁杆,铁板,铁杆
-     [<ore:plateIron>,<ore:frameIron>,<ore:plateIron>],//铁板,铁框架,铁板
+     [<ore:plateIron>,null,<ore:plateIron>],//铁板,空,铁板
      [<ore:stickIron>,<ore:plateIron>,<ore:stickIron>]]//铁杆,铁板,铁杆
 );
 //硬化
 recipes.addShaped(<enderio:item_conduit_facade:1>*64,
     [[<ore:stickSteel>,<ore:plateSteel>,<ore:stickSteel>],//钢杆,钢板,钢杆
-     [<ore:plateSteel>,<ore:frameSteel>,<ore:plateSteel>],//钢板,钢框架,钢板
+     [<ore:plateSteel>,null,<ore:plateSteel>],//钢板,空,钢板
      [<ore:stickSteel>,<ore:plateSteel>,<ore:stickSteel>]]//钢杆,钢板,钢杆
 );
 //透明
 recipes.addShaped(<enderio:item_conduit_facade:2>*64,
     [[<ore:stickIron>,<ore:blockGlass>,<ore:stickIron>],//铁杆,玻璃,铁杆
-     [<ore:blockGlass>,<ore:frameIron>,<ore:blockGlass>],//玻璃,铁框架,玻璃
+     [<ore:blockGlass>,null,<ore:blockGlass>],//玻璃,空,玻璃
      [<ore:stickIron>,<ore:blockGlass>,<ore:stickIron>]]//铁杆,玻璃,铁杆
 );
 //透明硬化
 recipes.addShaped(<enderio:item_conduit_facade:3>*64,
     [[<ore:stickSteel>,<ore:fusedQuartz>,<ore:stickSteel>],//钢杆,石英玻璃,钢杆
-     [<ore:fusedQuartz>,<ore:frameSteel>,<ore:fusedQuartz>],//石英玻璃,钢框架,石英玻璃
+     [<ore:fusedQuartz>,null,<ore:fusedQuartz>],//石英玻璃,空,石英玻璃
      [<ore:stickSteel>,<ore:fusedQuartz>,<ore:stickSteel>]]//钢杆,石英玻璃,钢杆
 );
 //导管
 //物品
-//recipes.addShaped(<enderio:item_item_conduit>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
+//recipes.addShaped(<enderio:item_item_conduit>*64,
+//    [[<ore:platePulsatingIron>,<ore:platePulsatingIron>,<ore:platePulsatingIron>],//充能铁板,充能铁板,充能铁板
+//     [<ore:>,<ore:circuitLv>,<ore:>],//GT[工具],LV电路板,GT[工具]
+//     [<ore:platePulsatingIron>,<ore:platePulsatingIron>,<ore:platePulsatingIron>]]//充能铁板,充能铁板,充能铁板
 //);
 //流体
-//recipes.addShaped(<enderio:item_liquid_conduit:0>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
+//recipes.addShaped(<enderio:item_liquid_conduit:0>*64,
+//    [[<ore:plateElectricalSteel>,<ore:plateElectricalSteel>,<ore:plateElectricalSteel>],//磁钢板,磁钢板,磁钢板
+//     [<ore:>,<ore:circuitLv>,<ore:>],//GT[工具],LV电路板,GT[工具]
+//     [<ore:plateElectricalSteel>,<ore:plateElectricalSteel>,<ore:plateElectricalSteel]]//磁钢板,磁钢板,磁钢板
 //);
 //高压流体
-//recipes.addShaped(<enderio:item_liquid_conduit:1>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
+//recipes.addShaped(<enderio:item_liquid_conduit:1>*64,
+//    [[<ore:plateDarkSteel>,<ore:plateDarkSteel>,<ore:plateDarkSteel>],//玄钢板,玄钢板,玄钢板
+//     [<enderio:item_liquid_conduit:0>,<>,<enderio:item_liquid_conduit:0>],//流体导管,LV电动泵,流体导管
+//     [<ore:plateDarkSteel>,<ore:plateDarkSteel>,<ore:plateDarkSteel>]]//玄钢板,玄钢板,玄钢板
 //);
 //末影流体
-//recipes.addShaped(<enderio:item_liquid_conduit:2>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
-//);
+recipes.addShaped(<enderio:item_liquid_conduit:2>*64,
+    [[<ore:plateEndSteel>,<ore:plateEndSteel>,<ore:plateEndSteel>],//末影钢板,末影钢板,末影钢板
+     [<enderio:item_liquid_conduit:1>,<enderio:item_material:43>,<enderio:item_liquid_conduit:1>],//高压流体导管,末影谐振器,高压流体导管
+     [<ore:plateEndSteel>,<ore:plateEndSteel>,<ore:plateEndSteel>]]//末影钢板,末影钢板,末影钢板
+);
 //红石
-//recipes.addShaped(<enderio:item_redstone_conduit>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
+//recipes.addShaped(<enderio:item_redstone_conduit>*64,
+//    [[<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>],//红石合金板,红石合金板,红石合金板
+//     [<ore:>,<ore:circuitLv>,<ore:>],//GT[工具],LV电路板,GT[工具]
+//     [<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>]]//红石合金板,红石合金板,红石合金板
 //);
 //方尖碑
 //经验
