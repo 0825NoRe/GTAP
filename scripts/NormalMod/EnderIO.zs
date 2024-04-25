@@ -456,17 +456,17 @@ recipes.addShaped(<enderio:item_soul_vial>,
 
 //[[功能性方块]]
 //玄钢砧
-//recipes.addShaped(<enderio:>,
-//    [[<ore:blockDarkSteel>,<ore:blockDarkSteel>,<ore:blockDarkSteel>],//玄钢块,玄钢块,玄钢块
-//     [null,<ore:ingotDarkSteel>,null],//空,玄钢锭,空
-//     [<ore:ingotDarkSteel>,<ore:ingotDarkSteel>,<ore:ingotDarkSteel>]]//玄钢锭,玄钢锭,玄钢锭
-//);
+recipes.addShaped(<enderio:block_dark_steel_anvil>,
+    [[<ore:blockDarkSteel>,<ore:blockDarkSteel>,<ore:blockDarkSteel>],//玄钢块,玄钢块,玄钢块
+     [null,<ore:ingotDarkSteel>,null],//空,玄钢锭,空
+     [<ore:ingotDarkSteel>,<ore:ingotDarkSteel>,<ore:ingotDarkSteel>]]//玄钢锭,玄钢锭,玄钢锭
+);
 //强化黑曜石
 //RecipeMap.getByName("").recipeBuilder()//?
 //   .inputs([<ore:dustObsidian>,//黑曜石粉
-              <ore:dustBedrock>*4])//基岩粉*4
+//            <ore:dustBedrock>*4])//基岩粉*4
 //   .fluidInputs([<fluid:dark_steel>*576])//熔融玄钢*576
-//   .outputs([<enderio:>])
+//   .outputs([<enderio:block_reinforced_obsidian>])
 //   .EUt(30)
 //   .duration(200)
 //   .buildAndRegister();
@@ -490,79 +490,79 @@ recipes.addShapeless(<enderio:block_detector_block_silent>,
     [<enderio:block_detector_block>]//方块检测器
 );
 //附魔器
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_enchanter>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //杀手乔
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_killer_joe>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //喷涂机
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_painter>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //蓄水库
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_reservoir>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //电动刷怪箱
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_powered_spawner>,
 //    [[<>,<>,<>],//魂金板,,魂金板
 //     [<>,<>,<>],//,LV机身,
 //     [<>,<>,<>]]//魂金板,,魂金板
 //);
 //流体储罐
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_tank:0>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //高压储罐
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_tank:1>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //空间传送器
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_transceiver>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //流体填充器
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_niard>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //旅行锚
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_travel_anchor>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //传送台
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_tele_pad>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //推力漏斗
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_impulse_hopper>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //合成器
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_crafter>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
@@ -594,86 +594,80 @@ recipes.addShaped(<enderio:item_conduit_facade:3>*64,
 );
 //导管
 //物品
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:item_item_conduit>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //流体
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:item_liquid_conduit:0>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //高压流体
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:item_liquid_conduit:1>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //末影流体
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:item_liquid_conduit:2>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //红石
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:item_redstone_conduit>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //方尖碑
 //经验
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_experience_obelisk>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //天气
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_weather_obelisk>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //诱引
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_attractor_obelisk>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //排除
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_aversion_obelisk>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //传送抑制
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_inhibitor_obelisk>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //重定向
-//recipes.addShaped(<>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
-//);
-//电动刷怪箱
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_relocator_obelisk>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //虚空箱子
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_vacuum_chest>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //虚空经验箱
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_xp_vacuum>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
