@@ -1,4 +1,4 @@
-//0914/0425/24
+//1033/0425/24
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.data.IData;
 import crafttweaker.event.PlayerCraftedEvent;
@@ -430,11 +430,11 @@ RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
     .duration(200)
     .buildAndRegister();
 //导管探测器
-//recipes.addShaped(<enderio:item_conduit_probe>,
-//    [[null,<gregtech:meta_item_1:232>,null],//空,LV传感器,空
-//     [<ore:plateIron>,<gregtech:>,<ore:plateIron>],//铁板,屏幕,铁板
-//     [<ore:plateIron>,<ore:gearIron>,<ore:plateIron>]]//铁板,铁齿轮,铁板
-//);
+recipes.addShaped(<enderio:item_conduit_probe>,
+    [[null,<gregtech:meta_item_1:232>,null],//空,LV传感器,空
+     [<ore:plateIron>,<gregtech:>,<ore:plateIron>],//铁板,屏幕,铁板
+     [<ore:plateIron>,<ore:gearIron>,<ore:plateIron>]]//铁板,铁齿轮,铁板
+);
 //旅行权杖
 //recipes.addShaped(<enderio:item_travel_staff>,
 //   [[null,null,<gregtech:>],//空,空,LV发射器
@@ -445,7 +445,7 @@ RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
 recipes.addShaped(<enderio:item_yeta_wrench>,
     [[<ore:plateElectricalSteel>,null,<ore:plateElectricalSteel>],//磁钢板,空,磁钢板
      [null,<ore:gearIron>,null],//空,铁齿轮,空
-     [null,<ore:plateElectricalSteel>,null]]//空,磁钢板,空
+     [null,<ore:stickElectricalSteel>,null]]//空,磁钢杆,空
 );
 //灵魂瓶
 recipes.addShaped(<enderio:item_soul_vial>,
@@ -514,29 +514,29 @@ recipes.addShapeless(<enderio:block_detector_block_silent>,
 //     [<>,<>,<>]]//,,
 //);
 //电动刷怪箱
-//recipes.addShaped(<enderio:block_powered_spawner>,
-//    [[<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>],//魂金板,魂金板,魂金板
-//     [<ore:plateSoulariumAlloy>,<enderio:item_material:41>,<ore:plateSoulariumAlloy>],//魂金板,Z-逻辑控制器,魂金板
-//     [<ore:plateElectricalSteel>,<>,<ore:plateElectricalSteel>]]//磁钢板,LV机身,磁钢板
-//);
+recipes.addShaped(<enderio:block_powered_spawner>,
+    [[<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>],//魂金板,魂金板,魂金板
+     [<ore:plateSoulariumAlloy>,<enderio:item_material:41>,<ore:plateSoulariumAlloy>],//魂金板,Z-逻辑控制器,魂金板
+     [<ore:plateElectricalSteel>,<gregtech:machine:986>,<ore:plateElectricalSteel>]]//磁钢板,LV机身,磁钢板
+);
 //流体储罐
-//RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//   .inputs([<ore:blockGlass>*4,//玻璃*4
-//            <ore:plateIron>*4,//铁板*4
-//            <ore:stickiron>*12])//铁杆*12
-//   .outputs([<enderio:block_tank:0>])
-//   .EUt(16)
-//   .duration(100)
-//   .buildAndRegister();
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:blockGlass>*4,//玻璃*4
+            <ore:plateIron>*4,//铁板*4
+            <ore:stickiron>*12])//铁杆*12
+   .outputs([<enderio:block_tank:0>])
+   .EUt(16)
+   .duration(100)
+   .buildAndRegister();
 //高压储罐
-//RecipeMap.getByName("assembler").recipeBuilder()//组装机
-//   .inputs([<ore:fusedQuartz>*4,//石英玻璃*4
-//            <ore:plateDarkSteel>*4,//玄钢板*4
-//            <ore:stickDarkSteel>*12])/玄钢杆*12
-//   .outputs([<enderio:block_tank:1>])
-//   .EUt(16)
-//   .duration(100)
-//   .buildAndRegister();
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:fusedQuartz>*4,//石英玻璃*4
+            <ore:plateDarkSteel>*4,//玄钢板*4
+            <ore:stickDarkSteel>*12])/玄钢杆*12
+   .outputs([<enderio:block_tank:1>])
+   .EUt(16)
+   .duration(100)
+   .buildAndRegister();
 //空间传送器
 //recipes.addShaped(<enderio:block_transceiver>,
 //    [[<>,<>,<>],//,,
@@ -588,9 +588,9 @@ recipes.addShaped(<enderio:item_conduit_facade:1>*64,
 );
 //透明
 recipes.addShaped(<enderio:item_conduit_facade:2>*64,
-    [[<ore:stickIron>,<minecraft:glass>,<ore:stickIron>],//铁杆,玻璃,铁杆
-     [<minecraft:glass>,<ore:frameIron>,<minecraft:glass>],//玻璃,铁框架,玻璃
-     [<ore:stickIron>,<minecraft:glass>,<ore:stickIron>]]//铁杆,玻璃,铁杆
+    [[<ore:stickIron>,<ore:blockGlass>,<ore:stickIron>],//铁杆,玻璃,铁杆
+     [<ore:blockGlass>,<ore:frameIron>,<ore:blockGlass>],//玻璃,铁框架,玻璃
+     [<ore:stickIron>,<ore:blockGlass>,<ore:stickIron>]]//铁杆,玻璃,铁杆
 );
 //透明硬化
 recipes.addShaped(<enderio:item_conduit_facade:3>*64,
