@@ -458,28 +458,28 @@ recipes.addShaped(<enderio:item_soul_vial>,
 //玄钢砧
 recipes.addShaped(<enderio:block_dark_steel_anvil>,
     [[<ore:blockDarkSteel>,<ore:blockDarkSteel>,<ore:blockDarkSteel>],//玄钢块,玄钢块,玄钢块
-     [null,<ore:ingotDarkSteel>,null],//空,玄钢锭,空
-     [<ore:ingotDarkSteel>,<ore:ingotDarkSteel>,<ore:ingotDarkSteel>]]//玄钢锭,玄钢锭,玄钢锭
+     [<ore:stickDarkSteel>,<ore:plateDarkSteel>,<ore:stickDarkSteel>],//玄钢杆,玄钢板,玄钢杆
+     [<ore:plateDarkSteel>,<ore:plateDarkSteel>,<ore:plateDarkSteel>]]//玄钢板,玄钢板,玄钢板
 );
 //强化黑曜石
-//RecipeMap.getByName("").recipeBuilder()//?
-//   .inputs([<ore:dustObsidian>,//黑曜石粉
-//            <ore:dustBedrock>*4])//基岩粉*4
-//   .fluidInputs([<fluid:dark_steel>*576])//熔融玄钢*576
-//   .outputs([<enderio:block_reinforced_obsidian>])
-//   .EUt(30)
-//   .duration(200)
-//   .buildAndRegister();
+RecipeMap.getByName("assembler").recipeBuilder()//组装机
+   .inputs([<ore:dustObsidian>,//黑曜石粉
+            <ore:dustBedrock>*4])//基岩粉*4
+   .fluidInputs([<fluid:dark_steel>*576])//熔融玄钢*576
+   .outputs([<enderio:block_reinforced_obsidian>])
+   .EUt(30)
+   .duration(200)
+   .buildAndRegister();
 //工业隔离方块
 //recipes.addShaped(<enderio:block_industrial_insulation>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
+//    [[<>,<>,<>],//聚乙烯杆,氯化钙粉,聚乙烯杆
+//     [<>,<>,<>],//氯化钙粉,聚乙烯片,氯化钙粉
+//     [<>,<>,<>]]//聚乙烯杆,氯化钙粉,聚乙烯杆
 //);
 //方块检测器
 recipes.addShaped(<enderio:block_detector_block>,
     [[<ore:plateDarkSteel>,<gregtech:meta_item_1:232>,<ore:plateDarkSteel>],//玄钢板,LV传感器,玄钢板
-     [<ore:plateDarkSteel>,<minecraft:piston>,<ore:plateDarkSteel>],//玄钢板,活塞,玄钢板
+     [<ore:plateDarkSteel>,<gregtech:machine:986>,<ore:plateDarkSteel>],//玄钢板,LV机身,玄钢板
      [<ore:plateDarkSteel>,<ore:blockRedstone>,<ore:plateDarkSteel>]]//玄钢板,红石块,玄钢板
 );
 recipes.addShapeless(<enderio:block_detector_block>,
@@ -498,13 +498,13 @@ recipes.addShapeless(<enderio:block_detector_block_silent>,
 //杀手乔
 //recipes.addShaped(<enderio:block_killer_joe>,
 //    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
+//     [<>,<enderio:item_material:42>,<>],//,人造僵尸,
+//     [<>,<gregtech:machine:986>,<>]]//,LV机身,
 //);
 //喷涂机
 //recipes.addShaped(<enderio:block_painter>,
 //    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
+//     [<>,<gregtech:machine:986>,<>],//,LV机身,
 //     [<>,<>,<>]]//,,
 //);
 //蓄水库
@@ -540,37 +540,37 @@ RecipeMap.getByName("assembler").recipeBuilder()//组装机
 //空间传送器
 //recipes.addShaped(<enderio:block_transceiver>,
 //    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
+//     [<>,<gregtech:machine:986>,<>],//,LV机身,
 //     [<>,<>,<>]]//,,
 //);
 //流体填充器
 //recipes.addShaped(<enderio:block_niard>,
 //    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
+//     [<>,<gregtech:machine:986>,<>],//,LV机身,
 //     [<>,<>,<>]]//,,
 //);
 //旅行锚
 //recipes.addShaped(<enderio:block_travel_anchor>,
 //    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
+//     [<>,<gregtech:machine:986>,<>],//,LV机身,
 //     [<>,<>,<>]]//,,
 //);
 //传送台
 //recipes.addShaped(<enderio:block_tele_pad>,
 //    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
+//     [<>,<gregtech:machine:986>,<>],//,LV机身,
 //     [<>,<>,<>]]//,,
 //);
 //推力漏斗
 //recipes.addShaped(<enderio:block_impulse_hopper>,
 //    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
+//     [<>,<gregtech:machine:986>,<>],//,LV机身,
 //     [<>,<>,<>]]//,,
 //);
 //合成器
 //recipes.addShaped(<enderio:block_crafter>,
 //    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
+//     [<>,<gregtech:machine:986>,<>],//,LV机身,
 //     [<>,<>,<>]]//,,
 //);
 //导管框架
