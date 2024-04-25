@@ -422,24 +422,25 @@ recipes.addShaped(<enderio:item_redstone_timer_filter>,
     [[<ore:ingotRedstoneAlloy>,<enderio:item_basic_item_filter>,<minecraft:clock>]]//红石合金锭,基础过滤器,时钟
 );
 //荧石纳米颗粒
-//RecipeMap.getByName("macerator").recipeBuilder()//研磨机
-//    .inputs([<ore:dustGlowstone>])//荧石粉
-//    .outputs([<>])
+//RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
+//    .inputs([<ore:dustGlowstone>,//荧石粉
+               <ore:dustClay>])//粘土粉
+//    .outputs([<enderio:block_holier_fog>*2])
 //    .EUt(16)
 //    .duration(200)
 //    .buildAndRegister();
 //导管探测器
-recipes.addShaped(<enderio:item_conduit_probe>,
-    [[null,<gregtech:meta_item_1:232>,null],//空,LV传感器,空
-     [<ore:plateIron>,<ore:gearIron>,<ore:plateIron>],//铁板,铁齿轮,铁板
-     [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]//铁板,铁板,铁板
-);
+//recipes.addShaped(<enderio:item_conduit_probe>,
+//    [[null,<gregtech:meta_item_1:232>,null],//空,LV传感器,空
+//     [<ore:plateIron>,<gregtech:>,<ore:plateIron>],//铁板,屏幕,铁板
+//     [<ore:plateIron>,<ore:gearIron>,<ore:plateIron>]]//铁板,铁齿轮,铁板
+//);
 //旅行权杖
-recipes.addShaped(<enderio:item_travel_staff>,
-   [[null,null,<gregtech:meta_item_1:233>],//空,空,LV发射器
-    [null,<ore:rodDarkSteel>,null],//空,玄钢杆,空
-    [<ore:batteryLv>,null,null]]//LV电池,空,空
-);
+//recipes.addShaped(<enderio:item_travel_staff>,
+//   [[null,null,<gregtech:>],//空,空,LV发射器
+//    [null,<ore:stickDarkSteel>,null],//空,玄钢杆,空
+//    [<ore:batteryLv>,null,null]]//LV电池,空,空
+//);
 //以太扳手
 recipes.addShaped(<enderio:item_yeta_wrench>,
     [[<ore:plateElectricalSteel>,null,<ore:plateElectricalSteel>],//磁钢板,空,磁钢板
@@ -455,36 +456,39 @@ recipes.addShaped(<enderio:item_soul_vial>,
 
 //[[功能性方块]]
 //玄钢砧
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:>,
 //    [[<ore:blockDarkSteel>,<ore:blockDarkSteel>,<ore:blockDarkSteel>],//玄钢块,玄钢块,玄钢块
 //     [null,<ore:ingotDarkSteel>,null],//空,玄钢锭,空
 //     [<ore:ingotDarkSteel>,<ore:ingotDarkSteel>,<ore:ingotDarkSteel>]]//玄钢锭,玄钢锭,玄钢锭
 //);
 //强化黑曜石
-//recipes.addShaped(<>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
-//);
+//RecipeMap.getByName("").recipeBuilder()//?
+//   .inputs([<ore:dustObsidian>,//黑曜石粉
+              <ore:dustBedrock>*4])//基岩粉*4
+//   .fluidInputs([<fluid:dark_steel>*576])//熔融玄钢*576
+//   .outputs([<enderio:>])
+//   .EUt(30)
+//   .duration(200)
+//   .buildAndRegister();
 //工业隔离方块
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_industrial_insulation>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
 //方块检测器
-//recipes.addShaped(<>,
+//recipes.addShaped(<enderio:block_detector_block>,
 //    [[<>,<>,<>],//,,
 //     [<>,<>,<>],//,,
 //     [<>,<>,<>]]//,,
 //);
-//recipes.addShapeless(<>,
-//    [<>]//
-//);
+recipes.addShapeless(<enderio:block_detector_block>,
+    [<enderio:block_detector_block_silent>]//方块检测器: 无声
+);
 //方块检测器: 无声
-//recipes.addShapeless(<>,
-//    [<>]//
-//);
+recipes.addShapeless(<enderio:block_detector_block_silent>,
+    [<enderio:block_detector_block>]//方块检测器
+);
 //附魔器
 //recipes.addShaped(<>,
 //    [[<>,<>,<>],//,,
