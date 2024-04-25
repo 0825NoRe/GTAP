@@ -514,23 +514,29 @@ recipes.addShapeless(<enderio:block_detector_block_silent>,
 //     [<>,<>,<>]]//,,
 //);
 //电动刷怪箱
-recipes.addShaped(<enderio:block_powered_spawner>,
-    [[<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>],//魂金板,魂金板,魂金板
-     [<ore:plateSoulariumAlloy>,<enderio:item_material:41>,<ore:plateSoulariumAlloy>],//魂金板,Z-逻辑控制器,魂金板
-     [<ore:plateElectricalSteel>,null,<ore:plateElectricalSteel>]]//磁钢板,LV机身,磁钢板
-);
+//recipes.addShaped(<enderio:block_powered_spawner>,
+//    [[<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>,<ore:plateSoulariumAlloy>],//魂金板,魂金板,魂金板
+//     [<ore:plateSoulariumAlloy>,<enderio:item_material:41>,<ore:plateSoulariumAlloy>],//魂金板,Z-逻辑控制器,魂金板
+//     [<ore:plateElectricalSteel>,<>,<ore:plateElectricalSteel>]]//磁钢板,LV机身,磁钢板
+//);
 //流体储罐
-//recipes.addShaped(<enderio:block_tank:0>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
-//);
+//RecipeMap.getByName("assembler").recipeBuilder()//组装机
+//   .inputs([<ore:blockGlass>*4,//玻璃*4
+//            <ore:plateIron>*4,//铁板*4
+//            <ore:stickiron>*12])//铁杆*12
+//   .outputs([<enderio:block_tank:0>])
+//   .EUt(16)
+//   .duration(100)
+//   .buildAndRegister();
 //高压储罐
-//recipes.addShaped(<enderio:block_tank:1>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
-//);
+//RecipeMap.getByName("assembler").recipeBuilder()//组装机
+//   .inputs([<ore:fusedQuartz>*4,//石英玻璃*4
+//            <ore:plateDarkSteel>*4,//玄钢板*4
+//            <ore:stickDarkSteel>*12])/玄钢杆*12
+//   .outputs([<enderio:block_tank:1>])
+//   .EUt(16)
+//   .duration(100)
+//   .buildAndRegister();
 //空间传送器
 //recipes.addShaped(<enderio:block_transceiver>,
 //    [[<>,<>,<>],//,,
