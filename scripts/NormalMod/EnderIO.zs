@@ -422,13 +422,13 @@ recipes.addShaped(<enderio:item_redstone_timer_filter>,
     [[<ore:ingotRedstoneAlloy>,<enderio:item_basic_item_filter>,<minecraft:clock>]]//红石合金锭,基础过滤器,时钟
 );
 //荧石纳米颗粒
-//RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
-//    .inputs([<ore:dustGlowstone>,//荧石粉
-//             <ore:dustClay>])//粘土粉
-//    .outputs([<enderio:block_holier_fog>*2])
-//    .EUt(16)
-//    .duration(200)
-//    .buildAndRegister();
+RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
+    .inputs([<ore:dustGlowstone>,//荧石粉
+             <ore:dustClay>])//粘土粉
+    .outputs([<enderio:block_holier_fog>*2])
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
 //导管探测器
 //recipes.addShaped(<enderio:item_conduit_probe>,
 //    [[null,<gregtech:meta_item_1:232>,null],//空,LV传感器,空
@@ -477,11 +477,11 @@ recipes.addShaped(<enderio:block_dark_steel_anvil>,
 //     [<>,<>,<>]]//,,
 //);
 //方块检测器
-//recipes.addShaped(<enderio:block_detector_block>,
-//    [[<>,<>,<>],//,,
-//     [<>,<>,<>],//,,
-//     [<>,<>,<>]]//,,
-//);
+recipes.addShaped(<enderio:block_detector_block>,
+    [[<ore:plateDarkSteel>,<gregtech:meta_item_1:232>,<ore:plateDarkSteel>],//玄钢板,LV传感器,玄钢板
+     [<ore:plateDarkSteel>,<minecraft:piston>,<ore:plateDarkSteel>],//玄钢板,活塞,玄钢板
+     [<ore:plateDarkSteel>,<ore:blockRedstone>,<ore:plateDarkSteel>]]//玄钢板,红石块,玄钢板
+);
 recipes.addShapeless(<enderio:block_detector_block>,
     [<enderio:block_detector_block_silent>]//方块检测器: 无声
 );
