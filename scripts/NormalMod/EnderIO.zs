@@ -1,4 +1,4 @@
-//1033/0425/24
+//0633/0427/24
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.data.IData;
 import crafttweaker.event.PlayerCraftedEvent;
@@ -432,15 +432,15 @@ RecipeMap.getByName("mixer").recipeBuilder()//搅拌机
 //导管探测器
 recipes.addShaped(<enderio:item_conduit_probe>,
     [[null,<gregtech:meta_item_1:232>,null],//空,LV传感器,空
-     [<ore:plateIron>,<gregtech:>,<ore:plateIron>],//铁板,屏幕,铁板
+     [<ore:plateIron>,<gregtech:meta_item_1:307>,<ore:plateIron>],//铁板,屏幕,铁板
      [<ore:plateIron>,<ore:gearIron>,<ore:plateIron>]]//铁板,铁齿轮,铁板
 );
 //旅行权杖
-//recipes.addShaped(<enderio:item_travel_staff>,
-//   [[null,null,<gregtech:>],//空,空,LV发射器
-//    [null,<ore:stickDarkSteel>,null],//空,玄钢杆,空
-//    [<ore:batteryLv>,null,null]]//LV电池,空,空
-//);
+recipes.addShaped(<enderio:item_travel_staff>,
+  [[null,null,<gregtech:meta_item_1:217>],//空,空,LV发射器
+   [null,<ore:stickDarkSteel>,null],//空,玄钢杆,空
+   [<ore:batteryLv>,null,null]]//LV电池,空,空
+);
 //以太扳手
 recipes.addShaped(<enderio:item_yeta_wrench>,
     [[<ore:plateElectricalSteel>,null,<ore:plateElectricalSteel>],//磁钢板,空,磁钢板
@@ -471,11 +471,11 @@ RecipeMap.getByName("assembler").recipeBuilder()//组装机
    .duration(200)
    .buildAndRegister();
 //工业隔离方块
-//recipes.addShaped(<enderio:block_industrial_insulation>,
-//    [[<>,<>,<>],//聚乙烯杆,氯化钙粉,聚乙烯杆
-//     [<>,<>,<>],//氯化钙粉,聚乙烯片,氯化钙粉
-//     [<>,<>,<>]]//聚乙烯杆,氯化钙粉,聚乙烯杆
-//);
+recipes.addShaped(<enderio:block_industrial_insulation>,
+   [[<ore:platePlastic>,<ore:dustCalciumChloride>,<ore:platePlastic>],//聚乙烯片,氯化钙粉,聚乙烯片
+    [<ore:dustCalciumChloride>,<ore:wool>,<ore:dustCalciumChloride>],//氯化钙粉,羊毛,氯化钙粉
+    [<ore:platePlastic>,<ore:dustCalciumChloride>,<ore:platePlastic>]]//聚乙烯片,氯化钙粉,聚乙烯片
+);
 //方块检测器
 recipes.addShaped(<enderio:block_detector_block>,
     [[<ore:plateDarkSteel>,<gregtech:meta_item_1:232>,<ore:plateDarkSteel>],//玄钢板,LV传感器,玄钢板
@@ -523,7 +523,7 @@ recipes.addShaped(<enderio:block_powered_spawner>,
 RecipeMap.getByName("assembler").recipeBuilder()//组装机
    .inputs([<ore:blockGlass>*4,//玻璃*4
             <ore:plateIron>*4,//铁板*4
-            <ore:stickiron>*12])//铁杆*12
+            <ore:stickIron>*12])//铁杆*12
    .outputs([<enderio:block_tank:0>])
    .EUt(16)
    .duration(100)
@@ -532,7 +532,7 @@ RecipeMap.getByName("assembler").recipeBuilder()//组装机
 RecipeMap.getByName("assembler").recipeBuilder()//组装机
    .inputs([<ore:fusedQuartz>*4,//石英玻璃*4
             <ore:plateDarkSteel>*4,//玄钢板*4
-            <ore:stickDarkSteel>*12])/玄钢杆*12
+            <ore:stickDarkSteel>*12])//玄钢杆*12
    .outputs([<enderio:block_tank:1>])
    .EUt(16)
    .duration(100)
@@ -600,23 +600,23 @@ recipes.addShaped(<enderio:item_conduit_facade:3>*64,
 );
 //导管
 //物品
-//recipes.addShaped(<enderio:item_item_conduit>*64,
-//    [[<ore:platePulsatingIron>,<ore:platePulsatingIron>,<ore:platePulsatingIron>],//充能铁板,充能铁板,充能铁板
-//     [<ore:>,<ore:circuitLv>,<ore:>],//GT[工具],LV电路板,GT[工具]
-//     [<ore:platePulsatingIron>,<ore:platePulsatingIron>,<ore:platePulsatingIron>]]//充能铁板,充能铁板,充能铁板
-//);
+recipes.addShaped(<enderio:item_item_conduit>*64,
+   [[<ore:platePulsatingIron>,<ore:platePulsatingIron>,<ore:platePulsatingIron>],//充能铁板,充能铁板,充能铁板
+    [<ore:toolWrench>,<ore:circuitLv>,<ore:toolHammer>],//GT扳手,LV电路板,GT锻锤
+    [<ore:platePulsatingIron>,<ore:platePulsatingIron>,<ore:platePulsatingIron>]]//充能铁板,充能铁板,充能铁板
+);
 //流体
-//recipes.addShaped(<enderio:item_liquid_conduit:0>*64,
-//    [[<ore:plateElectricalSteel>,<ore:plateElectricalSteel>,<ore:plateElectricalSteel>],//磁钢板,磁钢板,磁钢板
-//     [<ore:>,<ore:circuitLv>,<ore:>],//GT[工具],LV电路板,GT[工具]
-//     [<ore:plateElectricalSteel>,<ore:plateElectricalSteel>,<ore:plateElectricalSteel]]//磁钢板,磁钢板,磁钢板
-//);
+recipes.addShaped(<enderio:item_liquid_conduit:0>*64,
+   [[<ore:plateElectricalSteel>,<ore:plateElectricalSteel>,<ore:plateElectricalSteel>],//磁钢板,磁钢板,磁钢板
+    [<ore:toolWrench>,<ore:circuitLv>,<ore:toolHammer>],//GT扳手,LV电路板,GT锻锤
+    [<ore:plateElectricalSteel>,<ore:plateElectricalSteel>,<ore:plateElectricalSteel>]]//磁钢板,磁钢板,磁钢板
+);
 //高压流体
-//recipes.addShaped(<enderio:item_liquid_conduit:1>*64,
-//    [[<ore:plateDarkSteel>,<ore:plateDarkSteel>,<ore:plateDarkSteel>],//玄钢板,玄钢板,玄钢板
-//     [<enderio:item_liquid_conduit:0>,<>,<enderio:item_liquid_conduit:0>],//流体导管,LV电动泵,流体导管
-//     [<ore:plateDarkSteel>,<ore:plateDarkSteel>,<ore:plateDarkSteel>]]//玄钢板,玄钢板,玄钢板
-//);
+recipes.addShaped(<enderio:item_liquid_conduit:1>*64,
+   [[<ore:plateDarkSteel>,<ore:plateDarkSteel>,<ore:plateDarkSteel>],//玄钢板,玄钢板,玄钢板
+    [<enderio:item_liquid_conduit:0>,<gregtech:meta_item_1:142>,<enderio:item_liquid_conduit:0>],//流体导管,LV电动泵,流体导管
+    [<ore:plateDarkSteel>,<ore:plateDarkSteel>,<ore:plateDarkSteel>]]//玄钢板,玄钢板,玄钢板
+);
 //末影流体
 recipes.addShaped(<enderio:item_liquid_conduit:2>*64,
     [[<ore:plateEndSteel>,<ore:plateEndSteel>,<ore:plateEndSteel>],//末影钢板,末影钢板,末影钢板
@@ -624,11 +624,11 @@ recipes.addShaped(<enderio:item_liquid_conduit:2>*64,
      [<ore:plateEndSteel>,<ore:plateEndSteel>,<ore:plateEndSteel>]]//末影钢板,末影钢板,末影钢板
 );
 //红石
-//recipes.addShaped(<enderio:item_redstone_conduit>*64,
-//    [[<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>],//红石合金板,红石合金板,红石合金板
-//     [<ore:>,<ore:circuitLv>,<ore:>],//GT[工具],LV电路板,GT[工具]
-//     [<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>]]//红石合金板,红石合金板,红石合金板
-//);
+recipes.addShaped(<enderio:item_redstone_conduit>*64,
+   [[<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>],//红石合金板,红石合金板,红石合金板
+    [<ore:toolWrench>,<ore:circuitLv>,<ore:toolHammer>],//GT扳手,LV电路板,GT锻锤
+    [<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>,<ore:plateRedstoneAlloy>]]//红石合金板,红石合金板,红石合金板
+);
 //方尖碑
 //经验
 //recipes.addShaped(<enderio:block_experience_obelisk>,
