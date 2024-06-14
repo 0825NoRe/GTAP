@@ -1,0 +1,34 @@
+{
+  "weight": 70,
+  "density": 0.2,
+  "max_height": 144,
+  "min_height": 32,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "realgar"
+  },
+  "generator": {
+    "type": "layered",
+    "radius": [
+      24,
+      24
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:chalcopyrite"
+      },
+      {
+        "secondary": "ore:zeolite"
+      },
+      {
+        "between": "ore:cassiterite"
+      },
+      {
+        "sporadic": "ore:realgar"
+      }
+    ]
+  }
+}
