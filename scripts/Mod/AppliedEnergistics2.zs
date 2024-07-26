@@ -7,7 +7,7 @@ recipes.removeByMod("ae2stuff");
 recipes.removeByMod("ae2fc");
 
 
-//[组件&元件]
+//[组件&元件] 这段改一下，用LV的多步骤正序处理
 //[物品]
 //1K
 recipes.addShaped(<appliedenergistics2:material:35>,
