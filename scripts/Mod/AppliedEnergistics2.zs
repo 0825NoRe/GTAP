@@ -1,4 +1,4 @@
-//1133/0415/24
+//0929/0904/24
 import mods.gregtech.recipe.RecipeMaps;
 
 recipes.removeByMod("appliedenergistics2");
@@ -15,6 +15,13 @@ recipes.addShaped(<appliedenergistics2:material:35>,
      [<ore:crystalCertusQuartz>,<appliedenergistics2:material:22>,<ore:crystalCertusQuartz>],//赛特斯石英,逻辑处理器,赛特斯石英
      [<ore:dustRedstone>,<ore:crystalCertusQuartz>,<ore:dustRedstone>]]//红石粉,赛特斯石英,红石粉
 );
+RecipeMap.getByName("laser_engraver").recipeBuilder()//激光蚀刻
+    .inputs(<>*1)//
+    .notConsumable(<>*1)//<>透镜
+    .outputs(<appliedenergistics2:material:35>*1)
+    .duration(600)
+    .EUt(30)
+    .buildAndRegister();
 recipes.addShapeless(<appliedenergistics2:material:35>,
     [<appliedenergistics2:material:36>]//4K组件
 );
