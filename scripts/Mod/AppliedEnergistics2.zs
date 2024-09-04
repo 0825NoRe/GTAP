@@ -8,17 +8,16 @@ recipes.removeByMod("ae2fc");
 
 
 //[组件&元件] 这段改一下，用LV的多步骤正序处理
-//[物品]
-//1K
-recipes.addShaped(<appliedenergistics2:material:35>,
-    [[<ore:dustRedstone>,<ore:crystalCertusQuartz>,<ore:dustRedstone>],//红石粉,赛特斯石英,红石粉
-     [<ore:crystalCertusQuartz>,<appliedenergistics2:material:22>,<ore:crystalCertusQuartz>],//赛特斯石英,逻辑处理器,赛特斯石英
-     [<ore:dustRedstone>,<ore:crystalCertusQuartz>,<ore:dustRedstone>]]//红石粉,赛特斯石英,红石粉
-);
+//1K物品组件&元件
+//recipes.addShaped(<appliedenergistics2:material:35>,
+//    [[<ore:dustRedstone>,<ore:crystalCertusQuartz>,<ore:dustRedstone>],//红石粉,赛特斯石英,红石粉
+//     [<ore:crystalCertusQuartz>,<appliedenergistics2:material:22>,<ore:crystalCertusQuartz>],//赛特斯石英,逻辑处理器,赛特斯石英
+//     [<ore:dustRedstone>,<ore:crystalCertusQuartz>,<ore:dustRedstone>]]//红石粉,赛特斯石英,红石粉
+//);
 RecipeMap.getByName("laser_engraver").recipeBuilder()//激光蚀刻
     .inputs(<>*1)//
     .notConsumable(<>*1)//<>透镜
-    .outputs(<appliedenergistics2:material:35>*1)
+    .outputs(<appliedenergistics2:material:35>*1)//1K组件
     .duration(600)
     .EUt(30)
     .buildAndRegister();
@@ -28,49 +27,49 @@ recipes.addShapeless(<appliedenergistics2:material:35>,
 recipes.addShapeless(<appliedenergistics2:storage_cell_1k>,
     [<appliedenergistics2:material:39>,<appliedenergistics2:material:35>]//外壳,1K组件
 );
-//4K
+//4K物品组件&元件
 recipes.addShapeless(<appliedenergistics2:material:36>,
     [<appliedenergistics2:material:37>]//16K组件
 );
 recipes.addShapeless(<appliedenergistics2:storage_cell_4k>,
     [<appliedenergistics2:material:39>,<appliedenergistics2:material:36>]//外壳,4K组件
 );
-//16K
+//16K物品组件&元件
 recipes.addShapeless(<appliedenergistics2:material:37>,
     [<appliedenergistics2:material:38>]//64K组件
 );
 recipes.addShapeless(<appliedenergistics2:storage_cell_16k>,
     [<appliedenergistics2:material:39>,<appliedenergistics2:material:37>]//外壳,16K组件
 );
-//64K
+//64K物品组件&元件
 recipes.addShapeless(<appliedenergistics2:material:38>,
     [<aeadditions:storage.component:0>]//256K组件
 );
 recipes.addShapeless(<appliedenergistics2:storage_cell_64k>,
     [<appliedenergistics2:material:39>,<appliedenergistics2:material:39>]//外壳,64K组件
 );
-//256K
+//256K物品组件&元件
 recipes.addShapeless(<aeadditions:storage.component:0>,
     [<aeadditions:storage.component:1>]//1024K组件
 );
 recipes.addShapeless(<aeadditions:storage.physical:0>,
     [<appliedenergistics2:material:39>,<aeadditions:storage.component:0>]//外壳,256K组件
 );
-//1024K
+//1024K物品组件&元件
 recipes.addShapeless(<aeadditions:storage.component:1>,
     [<aeadditions:storage.component:2>]//4096K组件
 );
 recipes.addShapeless(<aeadditions:storage.physical:1>,
     [<appliedenergistics2:material:39>,<aeadditions:storage.component:1>]//外壳,1024K组件
 );
-//4096K
+//4096K物品组件&元件
 recipes.addShapeless(<aeadditions:storage.component:2>,
     [<aeadditions:storage.component:3>]//16384K组件
 );
 recipes.addShapeless(<aeadditions:storage.physical:2>,
     [<appliedenergistics2:material:39>,<aeadditions:storage.component:2>]//外壳,4096K组件
 );
-//16384K
+//16384K物品组件&元件
 recipes.addShaped(<aeadditions:storage.component:3>,
     [[<ore:circuitLv>,<appliedenergistics2:material:23>,<ore:circuitLv>],//LV电路板,运算处理器,LV电路板
      [<appliedenergistics2:material:24>,<appliedenergistics2:material:35>,<appliedenergistics2:material:24>],//工程处理器 ,1K组件,工程处理器 
@@ -79,25 +78,22 @@ recipes.addShaped(<aeadditions:storage.component:3>,
 recipes.addShapeless(<aeadditions:storage.physical:3>,
     [<appliedenergistics2:material:39>,<aeadditions:storage.component:3>]//外壳,16384K组件
 );
+//1K流体组件&元件
 
-//[流体]
-//1K
+//4K流体组件&元件
 
-//4K
+//16K流体组件&元件
 
-//16K
+//64K流体组件&元件
 
-//64K
+//256K流体组件&元件
 
-//256K
+//1024K流体组件&元件
 
-//1024K
-
-//4096K
+//4096K流体组件&元件
 
 //石英纤维
 
-//[线缆]
 //ME玻璃线缆
 
 //ME包层线缆
@@ -136,22 +132,21 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 //ME量子环
 
-//[合成存储器]
-//1K
+//1K合成存储器
 
-//4K
+//4K合成存储器
 
-//16K
+//16K合成存储器
 
-//64K
+//64K合成存储器
 
-//256K
+//256K合成存储器
 
-//1024K
+//1024K合成存储器
 
-//4096K
+//4096K合成存储器
 
-//16384K
+//16384K合成存储器
 
 //并行处理单元
 
@@ -159,16 +154,15 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 //合成单元
 
-//[终端]
-//普通
+//普通终端
 
-//流体
+//流体终端
 
-//合成
+//合成终端
 
-//样板
+//样板终端
 
-//接口
+//接口终端
 
 //P2P通道
 
@@ -202,7 +196,6 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 //反相
 
-//[材料]
 //ME存储外壳
 recipes.addShaped(<appliedenergistics2:material:39>,
     [[<ore:fusedQuartz>,<ore:dustRedstone>,<ore:fusedQuartz>],//石英玻璃,红石粉,石英玻璃
@@ -215,33 +208,18 @@ recipes.addShaped(<appliedenergistics2:material:39>,
 
 //身份卡
 
-//[压印模板]
-//硅
+//工程压印模板
 
-//工程
+//逻辑压印模板
 
-//逻辑
+//计算压印模板
 
-//计算
+//工程处理器
 
-//[电路板]
-//硅
+//逻辑处理器
 
-//工程
+//计算处理器
 
-//逻辑
-
-//计算
-
-//[处理器]
-//工程
-
-//逻辑
-
-//计算
-
-
-//升级
 //无线信号增幅器
 
 //加速卡
