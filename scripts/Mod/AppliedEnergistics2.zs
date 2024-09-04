@@ -93,7 +93,12 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 //4096K流体组件&元件
 
 //石英纤维
-
+RecipeMap.getByName("wiremill").recipeBuilder()//压线机
+    .inputs(<>*1)//石英？
+    .outputs(<>*1)
+    .duration(100)
+    .EUt(2)
+    .buildAndRegister();
 //ME玻璃线缆
 
 //ME包层线缆
@@ -198,9 +203,9 @@ recipes.addShapeless(<aeadditions:storage.physical:3>,
 
 //ME存储外壳
 recipes.addShaped(<appliedenergistics2:material:39>,
-    [[<ore:fusedQuartz>,<ore:dustRedstone>,<ore:fusedQuartz>],//石英玻璃,红石粉,石英玻璃
-     [<ore:dustRedstone>,null,<ore:dustRedstone>],//红石粉,空,红石粉
-     [<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>]]//铁锭,铁锭,铁锭
+    [[<ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>],//钢板,钢板,钢板
+     [<ore:fusedQuartz>,<appliedenergistics2:part:140>,<ore:fusedQuartz>],//石英玻璃,石英纤维,石英玻璃
+     [<ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>]]//钢板,钢板,钢板
 );
 //陨石雷达
 
@@ -215,7 +220,13 @@ recipes.addShaped(<appliedenergistics2:material:39>,
 //计算压印模板
 
 //工程处理器
-
+//RecipeMap.getByName("forming_press").recipeBuilder()//冲压机床
+//    .inputs(<ore:gemDiamond>*1)//钻石
+//    .notConsumable(<>*1)//工程压印模板
+//    .outputs(<>*1)
+//    .duration(100)
+//    .EUt(30)
+//    .buildAndRegister();
 //逻辑处理器
 
 //计算处理器
